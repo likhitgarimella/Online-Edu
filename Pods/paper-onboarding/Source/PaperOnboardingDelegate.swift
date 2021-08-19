@@ -55,4 +55,4 @@ public extension PaperOnboardingDelegate {
     func onboardingWillTransitonToLeaving() {}
     func onboardingConfigurationItem(_: OnboardingContentViewItem, index _: Int) {}
     var enableTapsOnPageControl: Bool { return true }
-}
+}   /// #59

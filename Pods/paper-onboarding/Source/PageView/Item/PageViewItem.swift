@@ -152,4 +152,4 @@ extension PageViewItem {
             self.imageView?.alpha = toValue
         }, completion: nil)
     }
-}
+}   /// #156

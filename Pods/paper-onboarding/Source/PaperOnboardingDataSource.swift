@@ -62,4 +62,4 @@ public extension PaperOnboardingDataSource {
     func onboardingPageItemSelectedRadius() -> CGFloat {
         return 22
     }
-}
+}   /// #66

@@ -3,6 +3,7 @@
 //  Online Edu
 //
 //  Created by Likhit Garimella on 19/08/21.
+//  Copyright © 2021 Likhit Garimella. All rights reserved.
 //
 
 import UIKit
@@ -70,7 +71,6 @@ class ViewController: UIViewController, PaperOnboardingDataSource, PaperOnboardi
             one.backgroundColor = UIColor(red: 15/255, green: 60/255, blue: 122/255, alpha: 1.0)
             two.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)
         }
-        
         if index == 1 {
             two.backgroundColor = UIColor(red: 15/255, green: 60/255, blue: 122/255, alpha: 1.0)
             one.backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1.0)

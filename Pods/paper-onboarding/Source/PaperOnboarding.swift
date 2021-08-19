@@ -228,4 +228,4 @@ extension PaperOnboarding: OnboardingContentViewDelegate {
     @objc func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
         (delegate as? PaperOnboardingDelegate)?.onboardingConfigurationItem(item, index: index)
     }
-}
+}   /// #232
