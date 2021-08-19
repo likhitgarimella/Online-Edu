@@ -1,24 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30e-Tj-v6A">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="yyg-7j-vkF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ay9-fh-TBT" customClass="ViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kiX-BB-rEV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMq-3V-Gpr" customClass="OnboardingView" customModule="Online_Edu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eGi-DW-z6j">
+                                <rect key="frame" x="198.66666666666666" y="627" width="17" height="7"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mF4-m4-scm">
+                                        <rect key="frame" x="0.0" y="0.0" width="7" height="7"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="fZC-Mz-iS5"/>
+                                            <constraint firstAttribute="width" constant="7" id="zoV-Gr-PcP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="3.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2U-52-BGE">
+                                        <rect key="frame" x="10" y="0.0" width="7" height="7"/>
+                                        <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="7" id="ABb-tj-u8a"/>
+                                            <constraint firstAttribute="height" constant="7" id="kLs-mV-LN4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="3.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk6-Or-T7V">
+                                <rect key="frame" x="34.666666666666657" y="654" width="345" height="62"/>
+                                <state key="normal" image="start"/>
+                                <connections>
+                                    <action selector="gotStarted:" destination="ay9-fh-TBT" eventType="touchUpInside" id="O2i-qp-i6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4rK-Qu-RcT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eGi-DW-z6j" firstAttribute="top" secondItem="VMq-3V-Gpr" secondAttribute="bottom" constant="8" id="Hlm-rc-K0h"/>
+                            <constraint firstItem="eGi-DW-z6j" firstAttribute="centerX" secondItem="kiX-BB-rEV" secondAttribute="centerX" id="Rwj-7W-exq"/>
+                            <constraint firstItem="Jk6-Or-T7V" firstAttribute="top" secondItem="eGi-DW-z6j" secondAttribute="bottom" constant="20" id="ZfJ-DS-uBy"/>
+                            <constraint firstItem="4rK-Qu-RcT" firstAttribute="bottom" secondItem="Jk6-Or-T7V" secondAttribute="bottom" constant="20" id="b4I-JZ-RY9"/>
+                            <constraint firstItem="Jk6-Or-T7V" firstAttribute="centerX" secondItem="kiX-BB-rEV" secondAttribute="centerX" id="pQk-dL-EyO"/>
+                            <constraint firstItem="VMq-3V-Gpr" firstAttribute="top" secondItem="4rK-Qu-RcT" secondAttribute="top" id="sDV-7b-sEj"/>
+                            <constraint firstItem="VMq-3V-Gpr" firstAttribute="leading" secondItem="4rK-Qu-RcT" secondAttribute="leading" id="tcH-yT-oFM"/>
+                            <constraint firstItem="VMq-3V-Gpr" firstAttribute="trailing" secondItem="4rK-Qu-RcT" secondAttribute="trailing" id="xvi-v8-ZeF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="Jk6-Or-T7V" id="GWe-4q-hag"/>
+                        <outlet property="onboardingView" destination="VMq-3V-Gpr" id="oPH-oh-f4f"/>
+                        <outlet property="one" destination="mF4-m4-scm" id="11Q-jX-Qnd"/>
+                        <outlet property="two" destination="O2U-52-BGE" id="c4t-j7-2xK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETC-XC-4wO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1773.913043478261" y="85.59782608695653"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="wGP-SV-fkT">
+            <objects>
+                <viewController id="30e-Tj-v6A" customClass="HomeViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Euq-FC-Frb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Mje-yh-W0b"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZe-7Y-iBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-954" y="86"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="start" width="345" height="62"/>
+    </resources>
 </document>
