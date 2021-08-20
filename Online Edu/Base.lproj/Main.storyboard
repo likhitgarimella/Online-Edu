@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="-955.07246376811599" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="2pL-UT-n1k">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="vrO-qP-gdZ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="vrO-qP-gdZ" customClass="SignupViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HpA-Rf-DdZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,10 +211,10 @@
             </objects>
             <point key="canvasLocation" x="-201" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="g2p-ES-4s7">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ysl-cp-6TF" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ysl-cp-6TF" customClass="LoginViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="56K-Kl-zU9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
