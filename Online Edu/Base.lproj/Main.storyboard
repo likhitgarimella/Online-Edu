@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="yyg-7j-vkF">
@@ -209,22 +214,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmH-Eq-OB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-201" y="400"/>
+            <point key="canvasLocation" x="-201" y="447"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="g2p-ES-4s7">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Ysl-cp-6TF" customClass="LoginViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="56K-Kl-zU9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahx-eM-YF5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtK-rx-iJA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-gl-RU3">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="447"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email or user name" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-Vm-VN8" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="457" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="PZ6-o4-woC"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-DW-dyq" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="513" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="q2t-aD-Iwm"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-w2-x8R">
+                                                <rect key="frame" x="36" y="579" width="342" height="59"/>
+                                                <state key="normal" image="loginBtn"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="7hK-Vm-VN8" firstAttribute="leading" secondItem="EtK-rx-iJA" secondAttribute="leading" constant="20" id="21o-uG-NA5"/>
+                                            <constraint firstItem="AWK-gl-RU3" firstAttribute="leading" secondItem="EtK-rx-iJA" secondAttribute="leading" constant="10" id="2Vh-Al-Rko"/>
+                                            <constraint firstItem="AWK-gl-RU3" firstAttribute="top" secondItem="EtK-rx-iJA" secondAttribute="top" id="6pX-on-NIq"/>
+                                            <constraint firstItem="5gF-w2-x8R" firstAttribute="top" secondItem="Uyh-DW-dyq" secondAttribute="bottom" constant="30" id="7MZ-HM-Ou4"/>
+                                            <constraint firstItem="AWK-gl-RU3" firstAttribute="centerX" secondItem="EtK-rx-iJA" secondAttribute="centerX" id="8gk-NZ-zjF"/>
+                                            <constraint firstAttribute="trailing" secondItem="AWK-gl-RU3" secondAttribute="trailing" constant="10" id="A0A-rv-K4S"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uyh-DW-dyq" secondAttribute="trailing" constant="20" id="AGx-ie-Lbj"/>
+                                            <constraint firstAttribute="bottom" secondItem="5gF-w2-x8R" secondAttribute="bottom" constant="362" id="C9a-i9-uGP"/>
+                                            <constraint firstItem="5gF-w2-x8R" firstAttribute="centerX" secondItem="EtK-rx-iJA" secondAttribute="centerX" id="ToG-TF-768"/>
+                                            <constraint firstAttribute="trailing" secondItem="7hK-Vm-VN8" secondAttribute="trailing" constant="20" id="ceE-W5-dnQ"/>
+                                            <constraint firstItem="7hK-Vm-VN8" firstAttribute="top" secondItem="AWK-gl-RU3" secondAttribute="bottom" constant="10" id="hiT-cK-q2P"/>
+                                            <constraint firstItem="Uyh-DW-dyq" firstAttribute="leading" secondItem="EtK-rx-iJA" secondAttribute="leading" constant="20" id="o3N-ho-tZJ"/>
+                                            <constraint firstItem="Uyh-DW-dyq" firstAttribute="top" secondItem="7hK-Vm-VN8" secondAttribute="bottom" constant="20" id="ssI-mF-bjf"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,21 +305,32 @@
                             <constraint firstItem="Ahx-eM-YF5" firstAttribute="top" secondItem="56K-Kl-zU9" secondAttribute="top" id="Zo7-4C-Z95"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="800"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="7hK-Vm-VN8" id="Fhs-x5-sm1"/>
+                        <outlet property="passTextField" destination="Uyh-DW-dyq" id="ICn-kn-k0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkk-RV-ogK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-201" y="-226"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="7hK-Vm-VN8">
+            <size key="intrinsicContentSize" width="177.66666666666666" height="20.666666666666668"/>
+        </designable>
+        <designable name="Uyh-DW-dyq">
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+        </designable>
+    </designables>
     <resources>
         <image name="blueBg" width="385" height="356"/>
+        <image name="login" width="431" height="447"/>
+        <image name="loginBtn" width="342" height="59"/>
         <image name="start" width="345" height="62"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
