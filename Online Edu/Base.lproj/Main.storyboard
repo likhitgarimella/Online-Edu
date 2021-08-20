@@ -177,26 +177,40 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="vrO-qP-gdZ" customClass="SignupViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HpA-Rf-DdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEs-Mq-w6O">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1a-u0-vOr">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="glN-2s-dc5">
                                                 <rect key="frame" x="10" y="10" width="394" height="397"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email or user name" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="GXQ-hE-iip" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="GXQ-hE-iip" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="417" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="MiH-UP-gTI"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Number" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="QFY-Eh-jO6" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="473" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Kpq-O2-CLG"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,7 +218,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dhK-Qm-2ts" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="473" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="585" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="Tfy-gz-smd"/>
                                                 </constraints>
@@ -217,12 +231,8 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-3Q-xtw">
-                                                <rect key="frame" x="36" y="595" width="342" height="59"/>
-                                                <state key="normal" image="signupBtn"/>
-                                            </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="O5V-KN-Bkh" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="529" width="374" height="36"/>
+                                                <rect key="frame" x="20" y="641" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="bfn-EA-FeY"/>
                                                 </constraints>
@@ -235,23 +245,47 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-3Q-xtw">
+                                                <rect key="frame" x="36" y="707" width="342" height="59"/>
+                                                <state key="normal" image="signupBtn"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="pzH-8I-2dp" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="529" width="374" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="MpV-ZF-tiH"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="dhK-Qm-2ts" firstAttribute="top" secondItem="pzH-8I-2dp" secondAttribute="bottom" constant="20" id="3gW-kX-hrO"/>
                                             <constraint firstItem="dhK-Qm-2ts" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="20" id="4L2-cA-SMo"/>
-                                            <constraint firstItem="dhK-Qm-2ts" firstAttribute="top" secondItem="GXQ-hE-iip" secondAttribute="bottom" constant="20" id="Kem-ZX-vlh"/>
+                                            <constraint firstItem="QFY-Eh-jO6" firstAttribute="top" secondItem="GXQ-hE-iip" secondAttribute="bottom" constant="20" id="5Pg-r4-PK4"/>
+                                            <constraint firstAttribute="trailing" secondItem="pzH-8I-2dp" secondAttribute="trailing" constant="20" id="GJl-Lt-6BF"/>
+                                            <constraint firstItem="pzH-8I-2dp" firstAttribute="top" secondItem="QFY-Eh-jO6" secondAttribute="bottom" constant="20" id="Jvo-wO-yuO"/>
+                                            <constraint firstAttribute="bottom" secondItem="YYg-3Q-xtw" secondAttribute="bottom" constant="334" id="PNh-2e-GPZ"/>
                                             <constraint firstItem="glN-2s-dc5" firstAttribute="top" secondItem="V1a-u0-vOr" secondAttribute="top" constant="10" id="RtE-dz-2mR"/>
                                             <constraint firstAttribute="trailing" secondItem="O5V-KN-Bkh" secondAttribute="trailing" constant="20" id="T48-Rl-c8b"/>
                                             <constraint firstItem="O5V-KN-Bkh" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="20" id="Uh1-2o-W69"/>
-                                            <constraint firstAttribute="bottom" secondItem="YYg-3Q-xtw" secondAttribute="bottom" constant="346" id="VrI-DF-3HQ"/>
                                             <constraint firstItem="glN-2s-dc5" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="10" id="Xia-V3-rsQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="QFY-Eh-jO6" secondAttribute="trailing" constant="20" id="YBx-F6-NSL"/>
+                                            <constraint firstItem="pzH-8I-2dp" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="20" id="asN-dG-Ckr"/>
                                             <constraint firstAttribute="trailing" secondItem="dhK-Qm-2ts" secondAttribute="trailing" constant="20" id="bBH-qb-lLn"/>
                                             <constraint firstItem="O5V-KN-Bkh" firstAttribute="top" secondItem="dhK-Qm-2ts" secondAttribute="bottom" constant="20" id="co1-cn-AVc"/>
-                                            <constraint firstItem="YYg-3Q-xtw" firstAttribute="top" secondItem="O5V-KN-Bkh" secondAttribute="bottom" constant="30" id="eo3-We-TsN"/>
                                             <constraint firstItem="GXQ-hE-iip" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="20" id="nH8-kF-PPs"/>
                                             <constraint firstAttribute="trailing" secondItem="GXQ-hE-iip" secondAttribute="trailing" constant="20" id="qur-A5-Udf"/>
                                             <constraint firstAttribute="trailing" secondItem="glN-2s-dc5" secondAttribute="trailing" constant="10" id="rI4-WH-OZD"/>
+                                            <constraint firstItem="YYg-3Q-xtw" firstAttribute="top" secondItem="O5V-KN-Bkh" secondAttribute="bottom" constant="30" id="vYz-3i-zUJ"/>
                                             <constraint firstItem="GXQ-hE-iip" firstAttribute="top" secondItem="glN-2s-dc5" secondAttribute="bottom" constant="10" id="vnn-qq-WXS"/>
+                                            <constraint firstItem="QFY-Eh-jO6" firstAttribute="leading" secondItem="V1a-u0-vOr" secondAttribute="leading" constant="20" id="w7W-Pa-2uc"/>
                                             <constraint firstItem="YYg-3Q-xtw" firstAttribute="centerX" secondItem="V1a-u0-vOr" secondAttribute="centerX" id="wuG-aV-wSG"/>
                                         </constraints>
                                     </view>
@@ -268,6 +302,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="TXL-wi-0Bv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -277,10 +312,12 @@
                             <constraint firstAttribute="trailing" secondItem="TEs-Mq-w6O" secondAttribute="trailing" id="sW3-DQ-suk"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="1100"/>
                     <connections>
                         <outlet property="confPassTextField" destination="O5V-KN-Bkh" id="N8B-Rv-f4l"/>
-                        <outlet property="emailTextField" destination="GXQ-hE-iip" id="eYh-DJ-8dd"/>
+                        <outlet property="emailTextField" destination="pzH-8I-2dp" id="8ir-u3-uAZ"/>
+                        <outlet property="mobnoTextField" destination="QFY-Eh-jO6" id="YEA-Pz-qKJ"/>
+                        <outlet property="nameTextField" destination="GXQ-hE-iip" id="HrH-VC-tTQ"/>
                         <outlet property="passTextField" destination="dhK-Qm-2ts" id="qeP-5I-bh5"/>
                     </connections>
                 </viewController>
@@ -305,14 +342,14 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-gl-RU3">
                                                 <rect key="frame" x="10" y="0.0" width="394" height="447"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email or user name" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-Vm-VN8" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-Vm-VN8" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="457" width="374" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="PZ6-o4-woC"/>
                                                 </constraints>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
                                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -367,6 +404,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="22y-oX-y84"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -389,19 +427,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="177.66666666666666" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="177.66666666666666" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="O5V-KN-Bkh">
             <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
+        </designable>
+        <designable name="QFY-Eh-jO6">
+            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
         </designable>
         <designable name="Uyh-DW-dyq">
             <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
             <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+        </designable>
+        <designable name="pzH-8I-2dp">
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
     </designables>
     <resources>
