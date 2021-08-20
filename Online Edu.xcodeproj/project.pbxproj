@@ -151,6 +151,34 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		02097D1D26D003190085F7F1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				02097CD426CEC8060085F7F1 /* OnboardingView.swift */,
+				02097CD226CEC7D50085F7F1 /* ViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		02097D1E26D003300085F7F1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				02097CD626CEC8B70085F7F1 /* HomeViewController.swift */,
+				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
+				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		02097D1F26D003480085F7F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02097D1926CF8FC60085F7F1 /* Extensions.swift */,
+				02097D1B26CF99EF0085F7F1 /* FloatLabelTextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		02108A9226CEB7250046211D = {
 			isa = PBXGroup;
 			children = (
@@ -178,14 +206,10 @@
 				02108AA726CEB7260046211D /* Assets.xcassets */,
 				02108AA926CEB7260046211D /* LaunchScreen.storyboard */,
 				02108AA426CEB7250046211D /* Main.storyboard */,
-				02097CD426CEC8060085F7F1 /* OnboardingView.swift */,
-				02097CD226CEC7D50085F7F1 /* ViewController.swift */,
-				02097CD626CEC8B70085F7F1 /* HomeViewController.swift */,
-				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
-				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
+				02097D1D26D003190085F7F1 /* Onboarding */,
+				02097D1E26D003300085F7F1 /* Auth */,
 				02108AAC26CEB7260046211D /* Info.plist */,
-				02097D1B26CF99EF0085F7F1 /* FloatLabelTextField.swift */,
-				02097D1926CF8FC60085F7F1 /* Extensions.swift */,
+				02097D1F26D003480085F7F1 /* Extensions */,
 			);
 			path = "Online Edu";
 			sourceTree = "<group>";
