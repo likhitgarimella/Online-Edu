@@ -18,9 +18,9 @@ class HomeViewController: UIViewController {
     func SegmentFontColor() {
         
         // Selected option color
-        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .selected)
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
         // Color of other options
-        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .normal)
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
         
     }
     
@@ -29,6 +29,9 @@ class HomeViewController: UIViewController {
         
         /// present onboarding screen for the first time
         showOnboardingIfNeeded()
+        
+        hideKeyboardWhenTappedAround()
+        SegmentFontColor()
         
     }
     
@@ -59,4 +62,4 @@ class HomeViewController: UIViewController {
         
     }
     
-}   // #63
+}   // #66

@@ -106,7 +106,7 @@
                                             <segment title="Sign up"/>
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="selectedSegmentTintColor" systemColor="linkColor"/>
+                                        <color key="selectedSegmentTintColor" red="0.76862745098039209" green="0.87058823529411766" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="switchSegment:" destination="30e-Tj-v6A" eventType="valueChanged" id="XO7-Vi-xPY"/>
                                         </connections>
@@ -258,9 +258,6 @@
     <resources>
         <image name="blueBg" width="385" height="356"/>
         <image name="start" width="345" height="62"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
