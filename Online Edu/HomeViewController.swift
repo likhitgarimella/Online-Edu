@@ -10,11 +10,39 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // Outlets
+    @IBOutlet var segment: UISegmentedControl!
+    @IBOutlet var loginView: UIView!
+    @IBOutlet var signupView: UIView!
+    
+    func SegmentFontColor() {
+        
+        // Selected option color
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .selected)
+        // Color of other options
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .normal)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         /// present onboarding screen for the first time
         showOnboardingIfNeeded()
+        
+    }
+    
+    // Switch Index of Segmented Control
+    @IBAction func switchSegment(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            loginView.alpha = 1
+            signupView.alpha = 0
+        }
+        if sender.selectedSegmentIndex == 1 {
+            loginView.alpha = 0
+            signupView.alpha = 1
+        }
         
     }
     
@@ -31,4 +59,4 @@ class HomeViewController: UIViewController {
         
     }
     
-}   // #35
+}   // #63
