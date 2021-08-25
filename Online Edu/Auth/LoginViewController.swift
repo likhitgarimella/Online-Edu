@@ -157,6 +157,10 @@ class LoginViewController: UIViewController {
             return emailTest.evaluate(with: testStr)
         }
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         if (emailTextField.text?.isEmpty == false || passTextField.text?.isEmpty == false) {
             
             /// call api
@@ -300,4 +304,4 @@ class LoginViewController: UIViewController {
     }
     */
     
-}   // #304
+}   // #308

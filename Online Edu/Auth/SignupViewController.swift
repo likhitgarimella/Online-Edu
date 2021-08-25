@@ -256,6 +256,10 @@ class SignupViewController: UIViewController {
             return emailTest.evaluate(with: testStr)
         }
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         if (nameTextField.text?.isEmpty == false && mobnoTextField.text?.isEmpty == false && emailTextField.text?.isEmpty == false && passTextField.text?.isEmpty == false && confPassTextField.text?.isEmpty == false) {
             
             if(self.passTextField.text == self.confPassTextField.text) {
@@ -288,4 +292,4 @@ class SignupViewController: UIViewController {
         
     }
     
-}   // #292
+}   // #296
