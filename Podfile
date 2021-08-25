@@ -7,7 +7,7 @@ target 'Online Edu' do
   # Pods for Online Edu
 
 pod 'paper-onboarding'
-
+pod 'SwiftyJSON'
 pod 'Alamofire'
 
 end

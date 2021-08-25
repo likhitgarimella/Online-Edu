@@ -254,6 +254,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-3Q-xtw">
                                                 <rect key="frame" x="36" y="707" width="342" height="59"/>
                                                 <state key="normal" image="signupBtn"/>
+                                                <connections>
+                                                    <action selector="signUpSuccess:" destination="vrO-qP-gdZ" eventType="touchUpInside" id="QhA-zS-Fg9"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="pzH-8I-2dp" customClass="FloatLabelTextField" customModule="Online_Edu" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="529" width="374" height="36"/>
@@ -325,7 +328,7 @@
                         <outlet property="mobnoTextField" destination="QFY-Eh-jO6" id="YEA-Pz-qKJ"/>
                         <outlet property="nameTextField" destination="GXQ-hE-iip" id="HrH-VC-tTQ"/>
                         <outlet property="passTextField" destination="dhK-Qm-2ts" id="qeP-5I-bh5"/>
-                        <segue destination="Ysl-cp-6TF" kind="presentation" id="KTQ-8T-t15"/>
+                        <segue destination="Ysl-cp-6TF" kind="presentation" identifier="signupToLogin" id="KTQ-8T-t15"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmH-Eq-OB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,7 +499,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="TdD-f3-c2Z"/>
+        <segue reference="KTQ-8T-t15"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="blueBg" width="385" height="356"/>

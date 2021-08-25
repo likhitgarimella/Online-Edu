@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.3)
   - paper-onboarding (6.1.5)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - paper-onboarding
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - paper-onboarding
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5b56f7f3baa4ccf60145050665705840a22cc05f
+PODFILE CHECKSUM: 31544c8b9975f8c73829d8d3f502d798f5687e31
 
 COCOAPODS: 1.10.1
