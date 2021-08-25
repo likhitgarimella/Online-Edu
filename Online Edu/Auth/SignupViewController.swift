@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import SwiftyJSON
 import Alamofire
+import SwiftyJSON
 import Toast_Swift
 
 class SignupViewController: UIViewController {
@@ -84,6 +84,7 @@ class SignupViewController: UIViewController {
                         print(parameters)
                         
                         AF.request(URL.init(string: url)!, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
+                            
                             print(response.result)
                             
                             switch response.result {
@@ -107,7 +108,8 @@ class SignupViewController: UIViewController {
                                 break
                             
                             case .failure(let error):
-                                print(error)
+                                print(error.localizedDescription)
+                                
                             }
                             
                         }
@@ -139,4 +141,4 @@ class SignupViewController: UIViewController {
         
     }
     
-}   // #143
+}   // #145

@@ -383,6 +383,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-w2-x8R">
                                                 <rect key="frame" x="36" y="579" width="342" height="59"/>
                                                 <state key="normal" image="loginBtn"/>
+                                                <connections>
+                                                    <action selector="loginSucess:" destination="Ysl-cp-6TF" eventType="touchUpInside" id="COu-O6-cEt"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -428,7 +431,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="7hK-Vm-VN8" id="Fhs-x5-sm1"/>
                         <outlet property="passTextField" destination="Uyh-DW-dyq" id="ICn-kn-k0e"/>
-                        <segue destination="NaA-GW-YcK" kind="presentation" id="m2r-NZ-kfa"/>
+                        <segue destination="NaA-GW-YcK" kind="presentation" identifier="loginToHome" id="m2r-NZ-kfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkk-RV-ogK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -477,25 +480,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="132.33333333333334" height="19"/>
+            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
         </designable>
         <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="110.33333333333333" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
         </designable>
         <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
