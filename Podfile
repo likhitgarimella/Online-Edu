@@ -10,6 +10,7 @@ pod 'paper-onboarding'
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'Toast-Swift'
+pod 'MBProgressHUD'
 
 end
 

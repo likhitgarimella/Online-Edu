@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import Toast_Swift
+import MBProgressHUD
 
 class SignupViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class SignupViewController: UIViewController {
     @IBOutlet var emailTextField: FloatLabelTextField!
     @IBOutlet var passTextField: FloatLabelTextField!
     @IBOutlet var confPassTextField: FloatLabelTextField!
+    
+    var reachability: Reachability?
     
     func UnderlineTextField() {
         
@@ -53,6 +56,7 @@ class SignupViewController: UIViewController {
         
     }
     
+    /*
     func acceptSignup() {
         
         func isValidEmail(testStr: String) -> Bool {
@@ -134,11 +138,132 @@ class SignupViewController: UIViewController {
         }
         
     }
+    */
     
+    func apiCalling() {
+        
+        do {
+            self.reachability = try Reachability.init()
+        }
+        catch {
+            print("Unable to start notifier")
+        }
+        
+        if ((reachability!.connection) != .unavailable) {
+            
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+            
+            let url = "http://3.108.14.230:3333/api/authentication/register"
+            print(url)
+            
+            let params: [String: Any] = [
+                
+                "email": self.emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines),
+                "mobileNumber": self.mobnoTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines),
+                "name": self.nameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines),
+                "password": self.passTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                
+            ]
+            
+            print(params)
+            
+            AF.request(URL.init(string: url)!, method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (response) in
+                
+                print(response.request!)
+                print(response.result)
+                print(response.response!)
+                
+                switch response.result {
+                
+                case .success(let payload):
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    if let x = payload as? Dictionary<String,AnyObject> {
+                        print(x)
+                        let resultValue = x as NSDictionary
+                        let message = resultValue["status"] as! String
+                        let code = resultValue["code"] as! String
+                        if code == "200" {
+                            
+                            let data = resultValue["data"] as! NSDictionary
+                            let token = resultValue["accessToken"] as! String
+                            let userId = data["_id"] as! String
+                            
+                            UserDefaults.standard.setValue(userId, forKey: "UserId")
+                            UserDefaults.standard.setValue("\(token)", forKey: "ApiToken")
+                            
+                            let alertController = UIAlertController(title: "Success!", message: "Welcome", preferredStyle: .alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                            alertController.addAction(alertAction)
+                            self.present(alertController, animated: true, completion: nil)
+                            
+                        } else {
+                            let alertController = UIAlertController(title: "Oops-1", message: "\(message)", preferredStyle: .alert)
+                            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                            alertController.addAction(alertAction)
+                            self.present(alertController, animated: true, completion: nil)
+                        }
+                    }
+                
+                case .failure(let error):
+                    print(error)
+                    let alertController = UIAlertController(title: "Oops-2", message: "App cannot be connected to the server", preferredStyle: .alert)
+                    let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                    alertController.addAction(alertAction)
+                    self.present(alertController, animated: true, completion: nil)
+                
+                }
+                
+            }
+            
+        } else {
+            let alertController = UIAlertController(title: "Oops-3", message: "Please check your Internet", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        
+    }
+ 
     @IBAction func signUpSuccess(_ sender: UIButton) {
         
-        acceptSignup()
+        // acceptSignup()
+        
+        func isValidEmail(testStr: String) -> Bool {
+            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailTest.evaluate(with: testStr)
+        }
+        
+        if (nameTextField.text?.isEmpty == false && mobnoTextField.text?.isEmpty == false && emailTextField.text?.isEmpty == false && passTextField.text?.isEmpty == false && confPassTextField.text?.isEmpty == false) {
+            
+            if(self.passTextField.text == self.confPassTextField.text) {
+                
+                if(isValidEmail(testStr: self.emailTextField.text!)) {
+                    
+                    if(self.mobnoTextField.text?.count == 10) {
+                        
+                        /// call api
+                        apiCalling()
+                        
+                    } else {
+                        self.view.makeToast("Mobile number should be 10 digits")
+                    }
+                    
+                } else {
+                    self.view.makeToast("Enter valid email address")
+                }
+                
+            } else {
+                self.view.makeToast("Passwords don't match")
+            }
+            
+        } else {
+            let alertController = UIAlertController(title: "Oops-4", message: "Please fill all the fields to proceed", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
         
     }
     
-}   // #145
+}   // #270
