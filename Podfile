@@ -8,6 +8,8 @@ target 'Online Edu' do
 
 pod 'paper-onboarding'
 
+pod 'Alamofire'
+
 end
 
 post_install do |installer|

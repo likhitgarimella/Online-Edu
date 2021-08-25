@@ -1,16 +1,20 @@
 PODS:
+  - Alamofire (5.4.3)
   - paper-onboarding (6.1.5)
 
 DEPENDENCIES:
+  - Alamofire
   - paper-onboarding
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - paper-onboarding
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
 
-PODFILE CHECKSUM: 1bc8937de58e0cc64e9cd481eca34756449be0dc
+PODFILE CHECKSUM: 5b56f7f3baa4ccf60145050665705840a22cc05f
 
 COCOAPODS: 1.10.1

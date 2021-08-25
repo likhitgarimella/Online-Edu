@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Online Edu/Pods-Online Edu-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework
