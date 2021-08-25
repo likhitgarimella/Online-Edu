@@ -122,9 +122,9 @@ class LoginViewController: UIViewController {
                     let json = JSON(value)
                     print(json)
                     
-                    let stringValue = json["SUCCESS"].rawString()
+                    let stringValue = json["data"].rawString()
                     
-                    if stringValue == "SUCCESS" {
+                    if stringValue == "true" {
                         let headerJson = JSON(response.response?.allHeaderFields as Any)
                         if let token = headerJson["accessToken"].rawString() {
                             UserDefaults.standard.set(token, forKey: "accessToken")
@@ -134,8 +134,8 @@ class LoginViewController: UIViewController {
                         print(headerJson)
                     }
                     
-                    else if json["message"].rawString() == "User already registered" {
-                        let message = json["message"].rawString()
+                    else if json["data"].rawString() == "User already registered" {
+                        let message = json["data"].rawString()
                         let alertController = UIAlertController(title: "Oops-1", message: message, preferredStyle: .alert)
                         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                         alertController.addAction(alertAction)
@@ -144,7 +144,7 @@ class LoginViewController: UIViewController {
                     }
                     
                     else {
-                        let message = json["message"].rawString()
+                        let message = json["data"].rawString()
                         let alertController = UIAlertController(title: "Oops-2", message: message, preferredStyle: .alert)
                         let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                         alertController.addAction(alertAction)
