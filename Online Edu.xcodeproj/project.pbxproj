@@ -168,9 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				02097CD626CEC8B70085F7F1 /* HomeViewController.swift */,
-				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
-				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
 				02859FFF26D6C571003E593D /* ApiUrlPart.swift */,
+				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
+				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -180,6 +180,7 @@
 			children = (
 				02097D1926CF8FC60085F7F1 /* Extensions.swift */,
 				02097D1B26CF99EF0085F7F1 /* FloatLabelTextField.swift */,
+				02859FFD26D6C1C5003E593D /* Reachability.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -214,7 +215,6 @@
 				02097D1D26D003190085F7F1 /* Onboarding */,
 				02097D1E26D003300085F7F1 /* Auth */,
 				02108AAC26CEB7260046211D /* Info.plist */,
-				02859FFD26D6C1C5003E593D /* Reachability.swift */,
 				02097D1F26D003480085F7F1 /* Extensions */,
 			);
 			path = "Online Edu";
