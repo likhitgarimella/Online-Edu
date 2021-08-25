@@ -166,12 +166,16 @@ class SignupViewController: UIViewController {
             ]
             
             print(params)
+            print("1111--------------------------------1111")
             
             AF.request(URL.init(string: url)!, method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (response) in
                 
                 print(response.request!)
+                print("2222--------------------------------2222")
                 print(response.result)
+                print("3333--------------------------------3333")
                 print(response.response!)
+                print("4444--------------------------------4444")
                 
                 switch response.result {
                 
@@ -179,22 +183,39 @@ class SignupViewController: UIViewController {
                     MBProgressHUD.hide(for: self.view, animated: true)
                     if let x = payload as? Dictionary<String,AnyObject> {
                         print(x)
+                        print("5555--------------------------------5555")
+                        
                         let resultValue = x as NSDictionary
-                        let message = resultValue["status"] as! String
-                        let code = resultValue["code"] as! String
-                        if code == "200" {
+                        // let message = resultValue["status"] as String
+                        guard let message = resultValue["status"] as? String else {return}
+                        // let code = resultValue["code"] as! String
+                        
+                        if message == "SUCCESS" {
                             
+                            print("6666--------------------------------6666")
+                            
+                            // guard let data = resultValue["data"] as? NSDictionary else {return}
                             let data = resultValue["data"] as! NSDictionary
-                            let token = resultValue["accessToken"] as! String
+                            // guard let token = resultValue["accessToken"] as? String else {return}
+                            // let token = resultValue["accessToken"] as! String
+                            // guard let userId = data["_id"] as? String else {return}
                             let userId = data["_id"] as! String
                             
-                            UserDefaults.standard.setValue(userId, forKey: "UserId")
-                            UserDefaults.standard.setValue("\(token)", forKey: "ApiToken")
+                            print("7777--------------------------------7777")
                             
+                            // UserDefaults.standard.setValue("\(token)", forKey: "ApiToken")
+                            UserDefaults.standard.setValue(userId, forKey: "UserId")
+                            
+                            print("8888--------------------------------8888")
+                            
+                            self.performSegue(withIdentifier: "signupToLogin", sender: self)
+                            
+                            /*
                             let alertController = UIAlertController(title: "Success!", message: "Welcome", preferredStyle: .alert)
                             let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                             alertController.addAction(alertAction)
                             self.present(alertController, animated: true, completion: nil)
+                            */
                             
                         } else {
                             let alertController = UIAlertController(title: "Oops-1", message: "\(message)", preferredStyle: .alert)
@@ -206,6 +227,7 @@ class SignupViewController: UIViewController {
                 
                 case .failure(let error):
                     print(error)
+                    
                     let alertController = UIAlertController(title: "Oops-2", message: "App cannot be connected to the server", preferredStyle: .alert)
                     let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                     alertController.addAction(alertAction)
@@ -266,4 +288,4 @@ class SignupViewController: UIViewController {
         
     }
     
-}   // #270
+}   // #292
