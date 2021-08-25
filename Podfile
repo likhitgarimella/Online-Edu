@@ -9,6 +9,7 @@ target 'Online Edu' do
 pod 'paper-onboarding'
 pod 'SwiftyJSON'
 pod 'Alamofire'
+pod 'Toast-Swift'
 
 end
 
