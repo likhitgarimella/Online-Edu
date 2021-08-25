@@ -8,6 +8,7 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import Toast_Swift
 
 class SignupViewController: UIViewController {
     
@@ -90,12 +91,14 @@ class SignupViewController: UIViewController {
                             case .success(let value):
                                 let json = JSON(value)
                                 print(json)
+                                
                                 let stringValue = json["success"].rawString()
                                 
                                 if stringValue == "true" {
                                     self.performSegue(withIdentifier: "signupToLogin", sender: self)
                                 } else {
                                     let message = json["error"].rawString()
+                                    ///
                                     let alertController = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
                                     let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                                                                     alertController.addAction(alertAction)
@@ -110,20 +113,20 @@ class SignupViewController: UIViewController {
                         }
                         
                     } else {
-                        print("Mobile number should be 10 digits")
+                        self.view.makeToast("Mobile number should be 10 digits")
                     }
                     
                 } else {
-                    print("Enter valid email address")
+                    self.view.makeToast("Enter valid email address")
                 }
                 
             } else {
-                print("Passwords don't match")
+                self.view.makeToast("Passwords don't match")
             }
             
         } else {
-            let alertController = UIAlertController(title: "Oops", message: "Please fill all the fields to proceed", preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            let alertController = UIAlertController(title: "Oops!", message: "Please fill all the fields to proceed", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
         }
@@ -136,4 +139,4 @@ class SignupViewController: UIViewController {
         
     }
     
-}   // #140
+}   // #143
