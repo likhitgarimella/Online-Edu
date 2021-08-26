@@ -797,7 +797,9 @@
                         <viewLayoutGuide key="safeArea" id="ATH-1X-0JK"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="add" id="rrx-U9-l3e"/>
+                    <tabBarItem key="tabBarItem" title="" image="add" id="rrx-U9-l3e">
+                        <inset key="imageInsets" minX="0.0" minY="-48" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UA-i2-Lhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
