@@ -719,6 +719,7 @@
                                         <state key="normal" image="continue"/>
                                         <connections>
                                             <action selector="loginSucess:" destination="Ysl-cp-6TF" eventType="touchUpInside" id="qvE-Js-DjK"/>
+                                            <segue destination="0Sx-mE-TCF" kind="presentation" id="zJy-GS-TdK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -770,6 +771,107 @@
             </objects>
             <point key="canvasLocation" x="750.72463768115949" y="-270.53571428571428"/>
         </scene>
+        <!--Search-->
+        <scene sceneID="RaK-Cd-yki">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gH1-oL-583" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="09x-hF-wms">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="a0x-7H-VGQ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="ZyO-uP-w4S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVX-k9-Ajv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="-565"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="okw-ul-kaN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Go3-do-i5W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sY-0R-ukm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ATH-1X-0JK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" id="rrx-U9-l3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9UA-i2-Lhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="86"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="pQH-32-wU5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="er6-Nv-SOg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R9d-c0-8sl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="k8f-Di-P5F"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="RRx-86-50B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYg-kK-W3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="-967"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="eEu-sR-XrM">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="0Sx-mE-TCF" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0dc-o8-Xcj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="er6-Nv-SOg" kind="relationship" relationship="viewControllers" id="s0b-Tz-MFG"/>
+                        <segue destination="gH1-oL-583" kind="relationship" relationship="viewControllers" id="G6O-UT-HyG"/>
+                        <segue destination="Go3-do-i5W" kind="relationship" relationship="viewControllers" id="aNm-GC-u2l"/>
+                        <segue destination="uIt-fC-jyr" kind="relationship" relationship="viewControllers" id="xWS-hd-STB"/>
+                        <segue destination="fsu-y6-GFM" kind="relationship" relationship="viewControllers" id="ztx-BW-WKM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAM-XO-rVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="-271"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="6Hq-GJ-e45">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="uIt-fC-jyr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgE-Su-EvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h9m-wb-ZX8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notification" image="notification" id="Myq-0v-KPA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PG5-Qe-yrk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="799"/>
+        </scene>
+        <!--Me-->
+        <scene sceneID="vpn-el-cC6">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fsu-y6-GFM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="afs-bY-OzG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XUG-Fi-Cxw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" image="me" id="crO-iv-6as"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8Z-3m-4RZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="597"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
@@ -800,8 +902,12 @@
     <resources>
         <image name="blueBg" width="385" height="356"/>
         <image name="continue" width="342" height="59"/>
+        <image name="home" width="24" height="19"/>
         <image name="login" width="431" height="447"/>
         <image name="loginBtn" width="342" height="59"/>
+        <image name="me" width="22" height="22"/>
+        <image name="notification" width="22" height="22"/>
+        <image name="search" width="22" height="22"/>
         <image name="signup" width="431" height="397"/>
         <image name="signupBtn" width="342" height="59"/>
         <image name="start" width="345" height="62"/>
