@@ -51,6 +51,15 @@
 		02108AAB26CEB7260046211D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA926CEB7260046211D /* LaunchScreen.storyboard */; };
 		02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFD26D6C1C5003E593D /* Reachability.swift */; };
 		0285A00026D6C571003E593D /* ApiUrlPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFF26D6C571003E593D /* ApiUrlPart.swift */; };
+		0285A00226D82499003E593D /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00126D82498003E593D /* InterestsViewController.swift */; };
+		0285A00526D824E9003E593D /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00426D824E9003E593D /* HomeScreenViewController.swift */; };
+		0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00626D8250F003E593D /* DiscoverViewController.swift */; };
+		0285A00926D8252B003E593D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00826D8252B003E593D /* AddViewController.swift */; };
+		0285A00B26D8254D003E593D /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00A26D8254D003E593D /* InboxViewController.swift */; };
+		0285A00D26D8256C003E593D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00C26D8256C003E593D /* ProfileViewController.swift */; };
+		0285A01026D8269B003E593D /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00F26D8269B003E593D /* LiveViewController.swift */; };
+		0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A01126D826B3003E593D /* CoursesViewController.swift */; };
+		0285A01426D826CC003E593D /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A01326D826CC003E593D /* TrendingViewController.swift */; };
 		4B7B194EBF73C99B3945B820 /* Pods_Online_Edu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +110,15 @@
 		02108AAC26CEB7260046211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02859FFD26D6C1C5003E593D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		02859FFF26D6C571003E593D /* ApiUrlPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlPart.swift; sourceTree = "<group>"; };
+		0285A00126D82498003E593D /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		0285A00426D824E9003E593D /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		0285A00626D8250F003E593D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		0285A00826D8252B003E593D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		0285A00A26D8254D003E593D /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		0285A00C26D8256C003E593D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0285A00F26D8269B003E593D /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		0285A01126D826B3003E593D /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		0285A01326D826CC003E593D /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		541459D593EA2C925D18D519 /* Pods-Online Edu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.release.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.release.xcconfig"; sourceTree = "<group>"; };
 		A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_Edu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435E595C3DDF9D4FFADF230 /* Pods-Online Edu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.debug.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +189,7 @@
 				02859FFF26D6C571003E593D /* ApiUrlPart.swift */,
 				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
 				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
+				0285A00126D82498003E593D /* InterestsViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -214,10 +233,34 @@
 				02108AA426CEB7250046211D /* Main.storyboard */,
 				02097D1D26D003190085F7F1 /* Onboarding */,
 				02097D1E26D003300085F7F1 /* Auth */,
+				0285A00326D824BB003E593D /* Tab Bar */,
+				0285A00E26D8267D003E593D /* Discover */,
 				02108AAC26CEB7260046211D /* Info.plist */,
 				02097D1F26D003480085F7F1 /* Extensions */,
 			);
 			path = "Online Edu";
+			sourceTree = "<group>";
+		};
+		0285A00326D824BB003E593D /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0285A00426D824E9003E593D /* HomeScreenViewController.swift */,
+				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
+				0285A00826D8252B003E593D /* AddViewController.swift */,
+				0285A00A26D8254D003E593D /* InboxViewController.swift */,
+				0285A00C26D8256C003E593D /* ProfileViewController.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		0285A00E26D8267D003E593D /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				0285A00F26D8269B003E593D /* LiveViewController.swift */,
+				0285A01126D826B3003E593D /* CoursesViewController.swift */,
+				0285A01326D826CC003E593D /* TrendingViewController.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		E72967CB23CDCA951939447A /* Pods */ = {
@@ -384,13 +427,22 @@
 				02097D1626CF8AC70085F7F1 /* LoginViewController.swift in Sources */,
 				02097D1826CF8AE50085F7F1 /* SignupViewController.swift in Sources */,
 				02097CD726CEC8B70085F7F1 /* HomeViewController.swift in Sources */,
+				0285A00B26D8254D003E593D /* InboxViewController.swift in Sources */,
 				02097D1A26CF8FC60085F7F1 /* Extensions.swift in Sources */,
+				0285A00526D824E9003E593D /* HomeScreenViewController.swift in Sources */,
+				0285A00926D8252B003E593D /* AddViewController.swift in Sources */,
+				0285A00D26D8256C003E593D /* ProfileViewController.swift in Sources */,
+				0285A00226D82499003E593D /* InterestsViewController.swift in Sources */,
 				02097CD326CEC7D50085F7F1 /* ViewController.swift in Sources */,
 				02097CD526CEC8060085F7F1 /* OnboardingView.swift in Sources */,
+				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
 				0285A00026D6C571003E593D /* ApiUrlPart.swift in Sources */,
+				0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */,
 				02097D1C26CF99EF0085F7F1 /* FloatLabelTextField.swift in Sources */,
 				02108A9F26CEB7250046211D /* AppDelegate.swift in Sources */,
 				02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */,
+				0285A01426D826CC003E593D /* TrendingViewController.swift in Sources */,
+				0285A01026D8269B003E593D /* LiveViewController.swift in Sources */,
 				02108AA126CEB7250046211D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

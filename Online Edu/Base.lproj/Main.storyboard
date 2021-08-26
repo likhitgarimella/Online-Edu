@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
         <array key="Poppins-Medium.ttf">
             <string>Poppins-Medium</string>
         </array>
@@ -444,10 +447,10 @@
             </objects>
             <point key="canvasLocation" x="-201" y="-404"/>
         </scene>
-        <!--View Controller-->
+        <!--Interests View Controller-->
         <scene sceneID="eHf-Ux-zup">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="NaA-GW-YcK" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="NaA-GW-YcK" customClass="InterestsViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="boZ-MA-Di0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -772,26 +775,114 @@
             </objects>
             <point key="canvasLocation" x="750.72463768115949" y="-270.53571428571428"/>
         </scene>
-        <!--Discover-->
+        <!--Discover View Controller-->
         <scene sceneID="RaK-Cd-yki">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gH1-oL-583" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gH1-oL-583" customClass="DiscoverViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="09x-hF-wms">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSZ-jQ-9J6">
+                                <rect key="frame" x="20" y="64" width="137" height="34"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Viw-oT-qr3">
+                                <rect key="frame" x="19.999999999999996" y="138" width="33.666666666666657" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5X-wR-hDu">
+                                <rect key="frame" x="374" y="139.66666666666666" width="20" height="22"/>
+                                <state key="normal" image="seeAll"/>
+                                <connections>
+                                    <action selector="livePressed:" destination="gH1-oL-583" eventType="touchUpInside" id="SvL-Ly-REx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-r4-MWD">
+                                <rect key="frame" x="20" y="183.33333333333334" width="73.666666666666671" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-fK-hQ3">
+                                <rect key="frame" x="20" y="228.66666666666666" width="79.666666666666671" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUA-nH-lhf">
+                                <rect key="frame" x="374" y="230.33333333333334" width="20" height="22"/>
+                                <state key="normal" image="seeAll"/>
+                                <connections>
+                                    <action selector="trendingPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="AJd-cN-QBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5z-0M-NmZ">
+                                <rect key="frame" x="374" y="185" width="20" height="22"/>
+                                <state key="normal" image="seeAll"/>
+                                <connections>
+                                    <action selector="coursesPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="xdW-AE-zAc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a0x-7H-VGQ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wSZ-jQ-9J6" firstAttribute="top" secondItem="a0x-7H-VGQ" secondAttribute="top" constant="20" id="5YD-Nf-auQ"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="y5z-0M-NmZ" secondAttribute="trailing" constant="20" id="ATc-AD-8lJ"/>
+                            <constraint firstItem="Ntb-r4-MWD" firstAttribute="top" secondItem="Viw-oT-qr3" secondAttribute="bottom" constant="20" id="DQp-aW-DbX"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="iUA-nH-lhf" secondAttribute="trailing" constant="20" id="EKc-bz-uIu"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ntb-r4-MWD" secondAttribute="trailing" symbolic="YES" id="IQt-QH-Jr3"/>
+                            <constraint firstItem="Viw-oT-qr3" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="MVi-02-Zqs"/>
+                            <constraint firstItem="Viw-oT-qr3" firstAttribute="top" secondItem="wSZ-jQ-9J6" secondAttribute="bottom" constant="40" id="O7w-mO-p70"/>
+                            <constraint firstItem="OV1-fK-hQ3" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="Y5N-vF-Gju"/>
+                            <constraint firstItem="Ntb-r4-MWD" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="cm6-nf-5dv"/>
+                            <constraint firstItem="iUA-nH-lhf" firstAttribute="centerY" secondItem="OV1-fK-hQ3" secondAttribute="centerY" id="d2i-Uz-qQ1"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="Q5X-wR-hDu" secondAttribute="trailing" constant="20" id="gXz-KC-NP2"/>
+                            <constraint firstItem="wSZ-jQ-9J6" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="hfv-5j-4Dh"/>
+                            <constraint firstItem="Q5X-wR-hDu" firstAttribute="centerY" secondItem="Viw-oT-qr3" secondAttribute="centerY" id="mXG-Cn-8lQ"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Viw-oT-qr3" secondAttribute="trailing" symbolic="YES" id="mxw-1b-OFR"/>
+                            <constraint firstItem="OV1-fK-hQ3" firstAttribute="top" secondItem="Ntb-r4-MWD" secondAttribute="bottom" constant="20" id="q8N-F0-jWW"/>
+                            <constraint firstItem="y5z-0M-NmZ" firstAttribute="centerY" secondItem="Ntb-r4-MWD" secondAttribute="centerY" id="rT1-Am-8HE"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wSZ-jQ-9J6" secondAttribute="trailing" symbolic="YES" id="ruu-30-WTR"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OV1-fK-hQ3" secondAttribute="trailing" symbolic="YES" id="yuD-wf-U5d"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Discover" image="search" id="ZyO-uP-w4S"/>
+                    <navigationItem key="navigationItem" id="yKJ-NY-geU"/>
+                    <connections>
+                        <segue destination="O6E-c0-53P" kind="show" identifier="live" id="ZDq-45-OTx"/>
+                        <segue destination="R0q-DA-eyn" kind="show" identifier="courses" id="MFn-yX-JZo"/>
+                        <segue destination="tcs-Ed-o3a" kind="show" identifier="trending" id="aRR-iT-c1R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVX-k9-Ajv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3367" y="-565"/>
+            <point key="canvasLocation" x="4273.913043478261" y="-565.35326086956525"/>
         </scene>
-        <!--View Controller-->
+        <!--Live View Controller-->
+        <scene sceneID="Qna-6s-LRT">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="O6E-c0-53P" customClass="LiveViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vno-Uk-Ic8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rOO-Oc-I8m"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="my9-GN-rI7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HB9-rl-cLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5135" y="-1272"/>
+        </scene>
+        <!--Add View Controller-->
         <scene sceneID="okw-ul-kaN">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Go3-do-i5W" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Go3-do-i5W" customClass="AddViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5sY-0R-ukm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -809,7 +900,7 @@
         <!--Home-->
         <scene sceneID="pQH-32-wU5">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="er6-Nv-SOg" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="er6-Nv-SOg" customClass="HomeScreenViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9d-c0-8sl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -833,7 +924,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="er6-Nv-SOg" kind="relationship" relationship="viewControllers" id="s0b-Tz-MFG"/>
-                        <segue destination="gH1-oL-583" kind="relationship" relationship="viewControllers" id="G6O-UT-HyG"/>
+                        <segue destination="Apc-tH-9dH" kind="relationship" relationship="viewControllers" id="G6O-UT-HyG"/>
                         <segue destination="Go3-do-i5W" kind="relationship" relationship="viewControllers" id="aNm-GC-u2l"/>
                         <segue destination="8M7-Yt-Cmh" kind="relationship" relationship="viewControllers" id="xWS-hd-STB"/>
                         <segue destination="fsu-y6-GFM" kind="relationship" relationship="viewControllers" id="ztx-BW-WKM"/>
@@ -846,7 +937,7 @@
         <!--All Activity-->
         <scene sceneID="6Hq-GJ-e45">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uIt-fC-jyr" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uIt-fC-jyr" customClass="InboxViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jgE-Su-EvM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -889,7 +980,7 @@
         <!--Me-->
         <scene sceneID="vpn-el-cC6">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fsu-y6-GFM" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="fsu-y6-GFM" customClass="ProfileViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afs-bY-OzG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -923,6 +1014,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xW5-H6-bEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3366.666666666667" y="798.50543478260875"/>
+        </scene>
+        <!--Discover-->
+        <scene sceneID="PeB-oL-hqk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Apc-tH-9dH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="search" id="ZyO-uP-w4S"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b9E-k6-h5k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gH1-oL-583" kind="relationship" relationship="rootViewController" id="B5i-15-plF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1of-If-7HV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366.666666666667" y="-565.35326086956525"/>
+        </scene>
+        <!--Courses View Controller-->
+        <scene sceneID="i1h-Zb-vjo">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="R0q-DA-eyn" customClass="CoursesViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBU-kE-JdX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PXD-ml-hVz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HJd-Ca-OYz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAc-pq-fRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5135" y="-566"/>
+        </scene>
+        <!--Trending View Controller-->
+        <scene sceneID="q1I-5K-LJG">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tcs-Ed-o3a" customClass="TrendingViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jh-pL-tD6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OrQ-PE-OlZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9k0-Kg-OWX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loZ-Va-9qG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5135" y="139"/>
         </scene>
     </scenes>
     <designables>
@@ -963,6 +1105,7 @@
         <image name="notification" width="22" height="22"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="search" width="22" height="22"/>
+        <image name="seeAll" width="20" height="20"/>
         <image name="signup" width="431" height="397"/>
         <image name="signupBtn" width="342" height="59"/>
         <image name="start" width="345" height="62"/>
