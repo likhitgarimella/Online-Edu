@@ -18,11 +18,19 @@ class DiscoverViewController: UIViewController {
     
     @IBAction func livePressed(_ sender: UIButton) {
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         self.performSegue(withIdentifier: "live", sender: self)
         
     }
     
     @IBAction func coursesPressed(_ sender: UIButton) {
+        
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
         
         self.performSegue(withIdentifier: "courses", sender: self)
         
@@ -30,8 +38,12 @@ class DiscoverViewController: UIViewController {
     
     @IBAction func trendingPressed(_ sender: UIButton) {
         
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
         self.performSegue(withIdentifier: "trending", sender: self)
         
     }
     
-}   // #38
+}   // #50

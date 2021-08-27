@@ -106,6 +106,16 @@ class InterestsViewController: UIViewController {
         
     }
     
+    @IBAction func continuePressed(_ sender: UIButton) {
+        
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        self.performSegue(withIdentifier: "continueToMain", sender: self)
+        
+    }
+    
 }
 
 extension InterestsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -148,4 +158,4 @@ extension InterestsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #152
+}   // #162

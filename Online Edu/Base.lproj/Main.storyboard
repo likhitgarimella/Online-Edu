@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sx-mE-TCF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30e-Tj-v6A">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -338,7 +338,7 @@
                         <outlet property="mobnoTextField" destination="QFY-Eh-jO6" id="YEA-Pz-qKJ"/>
                         <outlet property="nameTextField" destination="GXQ-hE-iip" id="HrH-VC-tTQ"/>
                         <outlet property="passTextField" destination="dhK-Qm-2ts" id="qeP-5I-bh5"/>
-                        <segue destination="Ysl-cp-6TF" kind="presentation" identifier="signupToLogin" id="KTQ-8T-t15"/>
+                        <segue destination="Ysl-cp-6TF" kind="presentation" identifier="signupToLogin" modalPresentationStyle="fullScreen" id="KTQ-8T-t15"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmH-Eq-OB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -441,7 +441,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="7hK-Vm-VN8" id="Fhs-x5-sm1"/>
                         <outlet property="passTextField" destination="Uyh-DW-dyq" id="ICn-kn-k0e"/>
-                        <segue destination="NaA-GW-YcK" kind="presentation" identifier="loginToHome" id="m2r-NZ-kfa"/>
+                        <segue destination="NaA-GW-YcK" kind="presentation" identifier="loginToHome" modalPresentationStyle="fullScreen" id="m2r-NZ-kfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkk-RV-ogK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -472,8 +472,8 @@
                                         <rect key="frame" x="36" y="471" width="342" height="59"/>
                                         <state key="normal" image="continue"/>
                                         <connections>
+                                            <action selector="continuePressed:" destination="NaA-GW-YcK" eventType="touchUpInside" id="p2b-e2-0QX"/>
                                             <action selector="loginSucess:" destination="Ysl-cp-6TF" eventType="touchUpInside" id="qvE-Js-DjK"/>
-                                            <segue destination="0Sx-mE-TCF" kind="presentation" id="zJy-GS-TdK"/>
                                         </connections>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uZb-6y-C6h">
@@ -563,6 +563,7 @@
                     <size key="freeformSize" width="414" height="800"/>
                     <connections>
                         <outlet property="interestsCollectionView" destination="uZb-6y-C6h" id="1Ur-q3-kax"/>
+                        <segue destination="0Sx-mE-TCF" kind="presentation" identifier="continueToMain" modalPresentationStyle="fullScreen" id="Nli-NA-kYf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoC-oJ-1dz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1161,7 +1162,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="TdD-f3-c2Z"/>
+        <segue reference="KTQ-8T-t15"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="add" width="62" height="62"/>
