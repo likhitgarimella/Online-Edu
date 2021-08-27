@@ -797,7 +797,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5X-wR-hDu">
-                                <rect key="frame" x="374" y="139.66666666666666" width="20" height="22"/>
+                                <rect key="frame" x="370" y="138.66666666666666" width="24" height="24"/>
                                 <state key="normal" image="seeAll"/>
                                 <connections>
                                     <action selector="livePressed:" destination="gH1-oL-583" eventType="touchUpInside" id="SvL-Ly-REx"/>
@@ -816,14 +816,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUA-nH-lhf">
-                                <rect key="frame" x="374" y="230.33333333333334" width="20" height="22"/>
+                                <rect key="frame" x="370" y="229.33333333333334" width="24" height="24"/>
                                 <state key="normal" image="seeAll"/>
                                 <connections>
                                     <action selector="trendingPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="AJd-cN-QBa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5z-0M-NmZ">
-                                <rect key="frame" x="374" y="185" width="20" height="22"/>
+                                <rect key="frame" x="370" y="184" width="24" height="24"/>
                                 <state key="normal" image="seeAll"/>
                                 <connections>
                                     <action selector="coursesPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="xdW-AE-zAc"/>
@@ -1060,7 +1060,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5lO-oz-6OG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="512"/>
+                                <rect key="frame" x="4" y="48" width="406" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kC3-i1-532">
@@ -1070,14 +1070,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="TSh-wT-9tQ" customClass="PhotoCollectionViewCell" customModule="Online_Edu" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrendingCollectionViewCell" id="TSh-wT-9tQ" customClass="TrendingCollectionViewCell" customModule="Online_Edu" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aDt-sV-Xkq">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trendImg" translatesAutoresizingMaskIntoConstraints="NO" id="uZQ-Xc-38m">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uZQ-Xc-38m">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="Xta-ZO-g7W"/>
@@ -1128,6 +1128,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="128" height="150"/>
                                         <connections>
+                                            <outlet property="bottomView" destination="xeZ-wC-MnO" id="1Zu-5X-h4u"/>
                                             <outlet property="descriptionLabel" destination="u41-ec-NAW" id="ycZ-Az-qfJ"/>
                                             <outlet property="hashtagLabel" destination="LD5-RO-f9a" id="7h2-In-nNR"/>
                                             <outlet property="photoImg" destination="uZQ-Xc-38m" id="Bqb-Hq-YtJ"/>
@@ -1143,10 +1144,10 @@
                         <viewLayoutGuide key="safeArea" id="OrQ-PE-OlZ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5lO-oz-6OG" firstAttribute="top" secondItem="OrQ-PE-OlZ" secondAttribute="top" id="JV3-jn-g1c"/>
-                            <constraint firstItem="OrQ-PE-OlZ" firstAttribute="trailing" secondItem="5lO-oz-6OG" secondAttribute="trailing" id="YPc-rG-kyk"/>
-                            <constraint firstItem="5lO-oz-6OG" firstAttribute="leading" secondItem="OrQ-PE-OlZ" secondAttribute="leading" id="ZSe-KD-RDa"/>
-                            <constraint firstItem="OrQ-PE-OlZ" firstAttribute="bottom" secondItem="5lO-oz-6OG" secondAttribute="bottom" id="o9O-gR-r3X"/>
+                            <constraint firstItem="5lO-oz-6OG" firstAttribute="top" secondItem="OrQ-PE-OlZ" secondAttribute="top" constant="4" id="JV3-jn-g1c"/>
+                            <constraint firstItem="OrQ-PE-OlZ" firstAttribute="trailing" secondItem="5lO-oz-6OG" secondAttribute="trailing" constant="4" id="YPc-rG-kyk"/>
+                            <constraint firstItem="5lO-oz-6OG" firstAttribute="leading" secondItem="OrQ-PE-OlZ" secondAttribute="leading" constant="4" id="ZSe-KD-RDa"/>
+                            <constraint firstItem="OrQ-PE-OlZ" firstAttribute="bottom" secondItem="5lO-oz-6OG" secondAttribute="bottom" constant="4" id="o9O-gR-r3X"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9k0-Kg-OWX"/>
@@ -1197,11 +1198,10 @@
         <image name="notification" width="22" height="22"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="search" width="22" height="22"/>
-        <image name="seeAll" width="20" height="20"/>
+        <image name="seeAll" width="24" height="24"/>
         <image name="signup" width="431" height="397"/>
         <image name="signupBtn" width="342" height="59"/>
         <image name="start" width="345" height="62"/>
-        <image name="trendImg" width="102" height="124"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

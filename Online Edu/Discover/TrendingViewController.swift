@@ -126,7 +126,7 @@ extension TrendingViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrendingCollectionViewCell", for: indexPath) as! TrendingCollectionViewCell
         // let post = posts[indexPath.row]
         // cell.post = post
         
@@ -138,7 +138,7 @@ extension TrendingViewController: UICollectionViewDelegate, UICollectionViewData
             cell.descriptionLabel.text! = dic["description"] as! String
         }
         let imageUrl = dic["fileURL"] as! String
-        cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "trending"))
+        cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "trendImg"))
         
         return cell
         
