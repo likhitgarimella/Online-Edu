@@ -13,6 +13,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var photoImg: UIImageView!
     
+    /*
     var post: TrendingPost? {
         didSet {
             updateView()
@@ -25,5 +26,6 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         descriptionLabel.text = post?.descriptionString
         
     }
+    */
     
-}   // #30
+}   // #32
