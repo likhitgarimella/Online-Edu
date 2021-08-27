@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30e-Tj-v6A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sx-mE-TCF">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -597,30 +597,43 @@
                                     <action selector="livePressed:" destination="gH1-oL-583" eventType="touchUpInside" id="SvL-Ly-REx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-r4-MWD">
-                                <rect key="frame" x="20" y="183.33333333333334" width="73.666666666666671" height="25.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEl-Rm-d0x">
+                                <rect key="frame" x="20" y="183.33333333333334" width="70" height="26"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEU-aO-kPV">
+                                <rect key="frame" x="370" y="184.33333333333334" width="24" height="24"/>
+                                <state key="normal" image="seeAll"/>
+                                <connections>
+                                    <action selector="authorsPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="I2g-S9-Ikr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntb-r4-MWD">
+                                <rect key="frame" x="20" y="229.33333333333334" width="73.666666666666671" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5z-0M-NmZ">
+                                <rect key="frame" x="370" y="230" width="24" height="24"/>
+                                <state key="normal" image="seeAll"/>
+                                <connections>
+                                    <action selector="coursesPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="xdW-AE-zAc"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV1-fK-hQ3">
-                                <rect key="frame" x="20" y="228.66666666666666" width="79.666666666666671" height="25.333333333333343"/>
+                                <rect key="frame" x="20" y="274.66666666666669" width="79.666666666666671" height="25.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUA-nH-lhf">
-                                <rect key="frame" x="370" y="229.33333333333334" width="24" height="24"/>
+                                <rect key="frame" x="370" y="275.33333333333331" width="24" height="24"/>
                                 <state key="normal" image="seeAll"/>
                                 <connections>
                                     <action selector="trendingPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="AJd-cN-QBa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5z-0M-NmZ">
-                                <rect key="frame" x="370" y="184" width="24" height="24"/>
-                                <state key="normal" image="seeAll"/>
-                                <connections>
-                                    <action selector="coursesPressed:" destination="gH1-oL-583" eventType="touchUpInside" id="xdW-AE-zAc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -628,22 +641,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wSZ-jQ-9J6" firstAttribute="top" secondItem="a0x-7H-VGQ" secondAttribute="top" constant="20" id="5YD-Nf-auQ"/>
+                            <constraint firstItem="CEl-Rm-d0x" firstAttribute="top" secondItem="Viw-oT-qr3" secondAttribute="bottom" constant="20" id="6PS-P8-g7j"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="y5z-0M-NmZ" secondAttribute="trailing" constant="20" id="ATc-AD-8lJ"/>
-                            <constraint firstItem="Ntb-r4-MWD" firstAttribute="top" secondItem="Viw-oT-qr3" secondAttribute="bottom" constant="20" id="DQp-aW-DbX"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="iUA-nH-lhf" secondAttribute="trailing" constant="20" id="EKc-bz-uIu"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ntb-r4-MWD" secondAttribute="trailing" symbolic="YES" id="IQt-QH-Jr3"/>
                             <constraint firstItem="Viw-oT-qr3" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="MVi-02-Zqs"/>
                             <constraint firstItem="Viw-oT-qr3" firstAttribute="top" secondItem="wSZ-jQ-9J6" secondAttribute="bottom" constant="40" id="O7w-mO-p70"/>
+                            <constraint firstItem="Ntb-r4-MWD" firstAttribute="top" secondItem="CEl-Rm-d0x" secondAttribute="bottom" constant="20" id="Q59-yn-lGL"/>
                             <constraint firstItem="OV1-fK-hQ3" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="Y5N-vF-Gju"/>
                             <constraint firstItem="Ntb-r4-MWD" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="cm6-nf-5dv"/>
                             <constraint firstItem="iUA-nH-lhf" firstAttribute="centerY" secondItem="OV1-fK-hQ3" secondAttribute="centerY" id="d2i-Uz-qQ1"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="Q5X-wR-hDu" secondAttribute="trailing" constant="20" id="gXz-KC-NP2"/>
                             <constraint firstItem="wSZ-jQ-9J6" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="hfv-5j-4Dh"/>
+                            <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" secondItem="HEU-aO-kPV" secondAttribute="trailing" constant="20" id="lby-5V-UTZ"/>
                             <constraint firstItem="Q5X-wR-hDu" firstAttribute="centerY" secondItem="Viw-oT-qr3" secondAttribute="centerY" id="mXG-Cn-8lQ"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Viw-oT-qr3" secondAttribute="trailing" symbolic="YES" id="mxw-1b-OFR"/>
+                            <constraint firstItem="HEU-aO-kPV" firstAttribute="centerY" secondItem="CEl-Rm-d0x" secondAttribute="centerY" id="nFS-MO-eBL"/>
                             <constraint firstItem="OV1-fK-hQ3" firstAttribute="top" secondItem="Ntb-r4-MWD" secondAttribute="bottom" constant="20" id="q8N-F0-jWW"/>
                             <constraint firstItem="y5z-0M-NmZ" firstAttribute="centerY" secondItem="Ntb-r4-MWD" secondAttribute="centerY" id="rT1-Am-8HE"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wSZ-jQ-9J6" secondAttribute="trailing" symbolic="YES" id="ruu-30-WTR"/>
+                            <constraint firstItem="CEl-Rm-d0x" firstAttribute="leading" secondItem="a0x-7H-VGQ" secondAttribute="leading" constant="20" id="tUm-9c-yRT"/>
                             <constraint firstItem="a0x-7H-VGQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OV1-fK-hQ3" secondAttribute="trailing" symbolic="YES" id="yuD-wf-U5d"/>
                         </constraints>
                     </view>
@@ -652,6 +669,7 @@
                         <segue destination="O6E-c0-53P" kind="show" identifier="live" id="ZDq-45-OTx"/>
                         <segue destination="R0q-DA-eyn" kind="show" identifier="courses" id="MFn-yX-JZo"/>
                         <segue destination="tcs-Ed-o3a" kind="show" identifier="trending" id="aRR-iT-c1R"/>
+                        <segue destination="cnu-tH-cbS" kind="show" identifier="authors" id="amt-mM-9ja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVX-k9-Ajv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -765,6 +783,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HB9-rl-cLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5135" y="-1272"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PuB-qT-l5L">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cnu-tH-cbS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4c-aR-54V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="sms-Ha-t5B"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ErQ-A4-Cby"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Du-87-B4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6032" y="-967"/>
         </scene>
         <!--Add View Controller-->
         <scene sceneID="okw-ul-kaN">
@@ -1027,7 +1061,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAc-pq-fRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5135" y="-566"/>
+            <point key="canvasLocation" x="6032" y="-270"/>
         </scene>
         <!--Trending View Controller-->
         <scene sceneID="q1I-5K-LJG">
@@ -1140,25 +1174,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.333333333333332"/>
         </designable>
         <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
+            <size key="intrinsicContentSize" width="132.33333333333334" height="19"/>
         </designable>
         <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="110.33333333333333" height="20.333333333333332"/>
         </designable>
         <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+            <size key="intrinsicContentSize" width="71" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+            <size key="intrinsicContentSize" width="71" height="19"/>
         </designable>
         <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>

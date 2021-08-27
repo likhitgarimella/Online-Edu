@@ -26,6 +26,16 @@ class DiscoverViewController: UIViewController {
         
     }
     
+    @IBAction func authorsPressed(_ sender: UIButton) {
+        
+        let taptic = UIImpactFeedbackGenerator(style: .light)
+        taptic.prepare()
+        taptic.impactOccurred()
+        
+        self.performSegue(withIdentifier: "authors", sender: self)
+        
+    }
+    
     @IBAction func coursesPressed(_ sender: UIButton) {
         
         let taptic = UIImpactFeedbackGenerator(style: .light)
@@ -46,4 +56,4 @@ class DiscoverViewController: UIViewController {
         
     }
     
-}   // #50
+}   // #60

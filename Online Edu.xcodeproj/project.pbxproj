@@ -63,6 +63,8 @@
 		0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A01A26D8F2D4003E593D /* InterestsCollectionViewCell.swift */; };
 		0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A01C26D90180003E593D /* LiveCollectionViewCell.swift */; };
 		0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A01E26D9018C003E593D /* CoursesCollectionViewCell.swift */; };
+		0285A02126D97F44003E593D /* AuthorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */; };
+		0285A02326D97F53003E593D /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02226D97F53003E593D /* AuthorsViewController.swift */; };
 		4B7B194EBF73C99B3945B820 /* Pods_Online_Edu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,8 @@
 		0285A01A26D8F2D4003E593D /* InterestsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0285A01C26D90180003E593D /* LiveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCollectionViewCell.swift; sourceTree = "<group>"; };
 		0285A01E26D9018C003E593D /* CoursesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollectionViewCell.swift; sourceTree = "<group>"; };
+		0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsCollectionViewCell.swift; sourceTree = "<group>"; };
+		0285A02226D97F53003E593D /* AuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewController.swift; sourceTree = "<group>"; };
 		541459D593EA2C925D18D519 /* Pods-Online Edu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.release.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.release.xcconfig"; sourceTree = "<group>"; };
 		A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_Edu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435E595C3DDF9D4FFADF230 /* Pods-Online Edu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.debug.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,6 +267,8 @@
 			children = (
 				0285A00F26D8269B003E593D /* LiveViewController.swift */,
 				0285A01C26D90180003E593D /* LiveCollectionViewCell.swift */,
+				0285A02226D97F53003E593D /* AuthorsViewController.swift */,
+				0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */,
 				0285A01126D826B3003E593D /* CoursesViewController.swift */,
 				0285A01E26D9018C003E593D /* CoursesCollectionViewCell.swift */,
 				0285A01326D826CC003E593D /* TrendingViewController.swift */,
@@ -451,11 +457,13 @@
 				0285A00D26D8256C003E593D /* ProfileViewController.swift in Sources */,
 				0285A00226D82499003E593D /* InterestsViewController.swift in Sources */,
 				02097CD326CEC7D50085F7F1 /* ViewController.swift in Sources */,
+				0285A02326D97F53003E593D /* AuthorsViewController.swift in Sources */,
 				02097CD526CEC8060085F7F1 /* OnboardingView.swift in Sources */,
 				0285A01626D8C507003E593D /* TrendingCollectionViewCell.swift in Sources */,
 				0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */,
 				0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */,
 				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
+				0285A02126D97F44003E593D /* AuthorsCollectionViewCell.swift in Sources */,
 				0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */,
 				02097D1C26CF99EF0085F7F1 /* FloatLabelTextField.swift in Sources */,
 				0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */,
@@ -612,7 +620,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77BWS8985H;
+				DEVELOPMENT_TEAM = 57L4MX4CXC;
 				INFOPLIST_FILE = "Online Edu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -634,7 +642,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77BWS8985H;
+				DEVELOPMENT_TEAM = 57L4MX4CXC;
 				INFOPLIST_FILE = "Online Edu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
