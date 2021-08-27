@@ -2,6 +2,9 @@ PODS:
   - Alamofire (5.4.3)
   - MBProgressHUD (1.2.0)
   - paper-onboarding (6.1.5)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SwiftyJSON (5.0.1)
   - Toast-Swift (5.0.1)
 
@@ -9,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - MBProgressHUD
   - paper-onboarding
+  - SDWebImage
   - SwiftyJSON
   - Toast-Swift
 
@@ -17,6 +21,7 @@ SPEC REPOS:
     - Alamofire
     - MBProgressHUD
     - paper-onboarding
+    - SDWebImage
     - SwiftyJSON
     - Toast-Swift
 
@@ -24,9 +29,10 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 3330275acaa5cf3a659c679649bd031f4ad9a511
+PODFILE CHECKSUM: a5676dcf72aca59ee74acd75b96e7613eb9bccbc
 
 COCOAPODS: 1.10.1

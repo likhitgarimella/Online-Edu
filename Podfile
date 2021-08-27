@@ -11,6 +11,7 @@ pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'Toast-Swift'
 pod 'MBProgressHUD'
+pod 'SDWebImage'
 
 end
 
