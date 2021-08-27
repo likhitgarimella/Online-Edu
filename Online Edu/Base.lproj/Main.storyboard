@@ -498,6 +498,7 @@
                                                             <rect key="frame" x="4" y="10" width="120" height="40"/>
                                                             <color key="backgroundColor" red="0.76862745099999996" green="0.87058823529999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstAttribute="width" constant="120" id="IVP-Wm-gXA"/>
                                                                 <constraint firstAttribute="height" constant="40" id="MuC-nJ-hOn"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
@@ -560,6 +561,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="800"/>
+                    <connections>
+                        <outlet property="interestsCollectionView" destination="uZb-6y-C6h" id="1Ur-q3-kax"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoC-oJ-1dz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

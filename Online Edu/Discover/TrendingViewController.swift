@@ -98,7 +98,7 @@ class TrendingViewController: UIViewController {
             }
             
         } else {
-            let alertController = UIAlertController(title: "Oops!", message: "Please check your Internet", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Oops-3", message: "Please check your Internet", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertAction)
             self.present(alertController, animated: true, completion: nil)
