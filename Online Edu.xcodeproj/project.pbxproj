@@ -50,7 +50,6 @@
 		02108AA826CEB7260046211D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA726CEB7260046211D /* Assets.xcassets */; };
 		02108AAB26CEB7260046211D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA926CEB7260046211D /* LaunchScreen.storyboard */; };
 		02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFD26D6C1C5003E593D /* Reachability.swift */; };
-		0285A00026D6C571003E593D /* ApiUrlPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFF26D6C571003E593D /* ApiUrlPart.swift */; };
 		0285A00226D82499003E593D /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00126D82498003E593D /* InterestsViewController.swift */; };
 		0285A00526D824E9003E593D /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00426D824E9003E593D /* HomeScreenViewController.swift */; };
 		0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00626D8250F003E593D /* DiscoverViewController.swift */; };
@@ -111,7 +110,6 @@
 		02108AAA26CEB7260046211D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02108AAC26CEB7260046211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02859FFD26D6C1C5003E593D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		02859FFF26D6C571003E593D /* ApiUrlPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrlPart.swift; sourceTree = "<group>"; };
 		0285A00126D82498003E593D /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		0285A00426D824E9003E593D /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		0285A00626D8250F003E593D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				02097CD626CEC8B70085F7F1 /* HomeViewController.swift */,
-				02859FFF26D6C571003E593D /* ApiUrlPart.swift */,
 				02097D1726CF8AE50085F7F1 /* SignupViewController.swift */,
 				02097D1526CF8AC70085F7F1 /* LoginViewController.swift */,
 			);
@@ -451,7 +448,6 @@
 				02097CD526CEC8060085F7F1 /* OnboardingView.swift in Sources */,
 				0285A01626D8C507003E593D /* TrendingCollectionViewCell.swift in Sources */,
 				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
-				0285A00026D6C571003E593D /* ApiUrlPart.swift in Sources */,
 				0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */,
 				02097D1C26CF99EF0085F7F1 /* FloatLabelTextField.swift in Sources */,
 				0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */,
