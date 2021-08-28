@@ -784,10 +784,10 @@
             </objects>
             <point key="canvasLocation" x="5135" y="-1272"/>
         </scene>
-        <!--View Controller-->
+        <!--Authors View Controller-->
         <scene sceneID="PuB-qT-l5L">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cnu-tH-cbS" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cnu-tH-cbS" customClass="AuthorsViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i4c-aR-54V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -893,6 +893,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ErQ-A4-Cby"/>
+                    <connections>
+                        <outlet property="authorsCollectionView" destination="e2x-3x-PZt" id="qcl-Ud-wq5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Du-87-B4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
