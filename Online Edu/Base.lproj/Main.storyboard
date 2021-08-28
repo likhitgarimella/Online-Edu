@@ -964,7 +964,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notfn-img" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-nO-jLU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notfnImg" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-nO-jLU">
                                 <rect key="frame" x="168.66666666666666" y="264" width="77" height="77"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications aren't available" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngb-Zj-Vli">
@@ -992,12 +992,57 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="All Activity" id="W4C-hQ-xUG">
-                        <barButtonItem key="rightBarButtonItem" image="paperplane" catalog="system" id="VY9-jt-rlk"/>
+                        <barButtonItem key="rightBarButtonItem" image="paperplane" catalog="system" id="VY9-jt-rlk">
+                            <connections>
+                                <segue destination="cvM-bg-gTF" kind="show" id="gao-bf-Fqy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG5-Qe-yrk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4273.913043478261" y="798.50543478260875"/>
+        </scene>
+        <!--All Activity-->
+        <scene sceneID="YTb-jZ-gjo">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cvM-bg-gTF" customClass="MessagesViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bT9-oC-6y0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msgImg" translatesAutoresizingMaskIntoConstraints="NO" id="rIS-17-kpi">
+                                <rect key="frame" x="149.66666666666666" y="247.66666666666663" width="114.99999999999997" height="110"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message your friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-Vk-toH">
+                                <rect key="frame" x="120.66666666666667" y="367.66666666666669" width="172.66666666666663" height="23"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share videos or start a conversation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUZ-G4-D8a">
+                                <rect key="frame" x="99.000000000000014" y="400.66666666666669" width="216.33333333333337" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iCA-bn-yTD"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HT1-Vk-toH" firstAttribute="centerX" secondItem="bT9-oC-6y0" secondAttribute="centerX" id="Cdo-KD-C61"/>
+                            <constraint firstItem="HT1-Vk-toH" firstAttribute="top" secondItem="rIS-17-kpi" secondAttribute="bottom" constant="10" id="GeU-uo-CxX"/>
+                            <constraint firstItem="wUZ-G4-D8a" firstAttribute="top" secondItem="HT1-Vk-toH" secondAttribute="bottom" constant="10" id="ULF-tN-Shy"/>
+                            <constraint firstItem="rIS-17-kpi" firstAttribute="centerY" secondItem="bT9-oC-6y0" secondAttribute="centerY" id="bcW-6o-bGH"/>
+                            <constraint firstItem="wUZ-G4-D8a" firstAttribute="centerX" secondItem="bT9-oC-6y0" secondAttribute="centerX" id="hj9-36-m5S"/>
+                            <constraint firstItem="rIS-17-kpi" firstAttribute="centerX" secondItem="bT9-oC-6y0" secondAttribute="centerX" id="wpr-OE-50w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="All Activity" id="tAr-R6-Lb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V82-rF-giZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4274" y="1467"/>
         </scene>
         <!--Me-->
         <scene sceneID="vpn-el-cC6">
@@ -1309,7 +1354,8 @@
         <image name="login" width="431" height="447"/>
         <image name="loginBtn" width="342" height="59"/>
         <image name="me" width="22" height="22"/>
-        <image name="notfn-img" width="77" height="77"/>
+        <image name="msgImg" width="115" height="110"/>
+        <image name="notfnImg" width="77" height="77"/>
         <image name="notification" width="22" height="22"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="search" width="22" height="22"/>
