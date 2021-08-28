@@ -66,6 +66,7 @@
 		0285A02126D97F44003E593D /* AuthorsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */; };
 		0285A02326D97F53003E593D /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02226D97F53003E593D /* AuthorsViewController.swift */; };
 		0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02426DA9DCB003E593D /* MessagesViewController.swift */; };
+		0285A02726DAF0D3003E593D /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02626DAF0D3003E593D /* VideoCollectionViewCell.swift */; };
 		4B7B194EBF73C99B3945B820 /* Pods_Online_Edu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +132,7 @@
 		0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0285A02226D97F53003E593D /* AuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewController.swift; sourceTree = "<group>"; };
 		0285A02426DA9DCB003E593D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		0285A02626DAF0D3003E593D /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		541459D593EA2C925D18D519 /* Pods-Online Edu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.release.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.release.xcconfig"; sourceTree = "<group>"; };
 		A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_Edu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435E595C3DDF9D4FFADF230 /* Pods-Online Edu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.debug.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				0285A00426D824E9003E593D /* HomeScreenViewController.swift */,
+				0285A02626DAF0D3003E593D /* VideoCollectionViewCell.swift */,
 				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
 				0285A00826D8252B003E593D /* AddViewController.swift */,
 				0285A00A26D8254D003E593D /* InboxViewController.swift */,
@@ -450,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0285A02726DAF0D3003E593D /* VideoCollectionViewCell.swift in Sources */,
 				02097D1626CF8AC70085F7F1 /* LoginViewController.swift in Sources */,
 				02097D1826CF8AE50085F7F1 /* SignupViewController.swift in Sources */,
 				0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */,
