@@ -24,38 +24,47 @@ class VideoCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.textAlignment = .left
         label.textColor = .white
+        label.text = "@likhitgarimella"
         return label
     }()
     private let captionLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
         label.textColor = .white
+        label.text = "I love Friends!"
         return label
     }()
     private let audioLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
         label.textColor = .white
+        label.text = "Chandler Bing Sarcasm"
         return label
     }()
     
     // Buttons
     private let profileButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(systemName: "person.crop.circle.badge.plus"), for: .normal)
         return button
     }()
     private let likeButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "likeIcon"), for: .normal)
         return button
     }()
     private let commentButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "commentIcon"), for: .normal)
         return button
     }()
     private let shareButton: UIButton = {
         let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "shareIcon"), for: .normal)
         return button
     }()
+    
+    private let videoContainer = UIView()
     
     // Delegate
     weak var delegate: VideoCollectionViewCellDelegate?
@@ -74,6 +83,8 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     private func addSubviews() {
         
+        contentView.addSubview(videoContainer)
+        
         contentView.addSubview(usernameLabel)
         contentView.addSubview(captionLabel)
         contentView.addSubview(audioLabel)
@@ -88,6 +99,10 @@ class VideoCollectionViewCell: UICollectionViewCell {
         likeButton.addTarget(self, action: #selector(didTapLikeButton), for: .touchDown)
         commentButton.addTarget(self, action: #selector(didTapCommentButton), for: .touchDown)
         shareButton.addTarget(self, action: #selector(didTapShareButton), for: .touchDown)
+        
+        videoContainer.clipsToBounds = true
+        
+        contentView.sendSubviewToBack(videoContainer)
         
     }
     
@@ -114,6 +129,25 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        videoContainer.frame = contentView.bounds
+        
+        let size = contentView.frame.size.width/12
+        let width = contentView.frame.size.width
+        let height = contentView.frame.size.height - 100
+        
+        // Buttons
+        shareButton.frame = CGRect(x: width-size-20, y: height-size-60, width: size, height: size)
+        commentButton.frame = CGRect(x: width-size-20, y: height-(size*2)-90, width: size, height: size)
+        likeButton.frame = CGRect(x: width-size-20, y: height-(size*3)-120, width: size, height: size)
+        profileButton.frame = CGRect(x: width-size-24, y: height-(size*4)-154, width: size+8, height: size+8)
+        profileButton.tintColor = UIColor.white
+        
+        // Labels
+        usernameLabel.frame = CGRect(x: 8, y: height-160, width: width-size-10, height: 40)
+        captionLabel.frame = CGRect(x: 8, y: height-120, width: width-size-10, height: 40)
+        audioLabel.frame = CGRect(x: 8, y: height-80, width: width-size-10, height: 40)
+        
     }
     
     override func prepareForReuse() {
@@ -137,8 +171,8 @@ class VideoCollectionViewCell: UICollectionViewCell {
         playerView.player = player
         playerView.frame = contentView.bounds
         playerView.videoGravity = .resizeAspectFill
-        contentView.layer.addSublayer(playerView)
-        player?.volume = 1000
+        videoContainer.layer.addSublayer(playerView)
+        player?.volume = 0
         player?.play()
         
     }
@@ -154,4 +188,4 @@ class VideoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-}   // #158
+}   // #192
