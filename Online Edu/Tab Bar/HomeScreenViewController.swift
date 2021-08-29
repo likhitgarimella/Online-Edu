@@ -48,7 +48,7 @@ class HomeScreenViewController: UIViewController {
     
 }
 
-extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, VideoCollectionViewCellDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
@@ -58,7 +58,24 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
         let model = data[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.identifier, for: indexPath) as! VideoCollectionViewCell
         cell.configure(with: model)
+        cell.delegate = self
         return cell
     }
     
-}   // #65
+    func didTapProfileButton(with model: VideoModel) {
+        print("Profile button tapped")
+    }
+    
+    func didTapLikeButton(with model: VideoModel) {
+        print("Like button tapped")
+    }
+    
+    func didTapCommentButton(with model: VideoModel) {
+        print("Comment button tapped")
+    }
+    
+    func didTapShareButton(with model: VideoModel) {
+        print("Share button tapped")
+    }
+    
+}   // #82
