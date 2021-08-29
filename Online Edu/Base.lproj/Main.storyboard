@@ -1003,7 +1003,7 @@
             </objects>
             <point key="canvasLocation" x="4273.913043478261" y="798.50543478260875"/>
         </scene>
-        <!--All Activity-->
+        <!--Direct Message-->
         <scene sceneID="YTb-jZ-gjo">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="cvM-bg-gTF" customClass="MessagesViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
@@ -1038,7 +1038,7 @@
                             <constraint firstItem="rIS-17-kpi" firstAttribute="centerX" secondItem="bT9-oC-6y0" secondAttribute="centerX" id="wpr-OE-50w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="All Activity" id="tAr-R6-Lb6"/>
+                    <navigationItem key="navigationItem" title="Direct Message" id="tAr-R6-Lb6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V82-rF-giZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
