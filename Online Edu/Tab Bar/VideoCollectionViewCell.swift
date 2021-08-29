@@ -8,9 +8,57 @@
 import UIKit
 import AVFoundation
 
+protocol VideoCollectionViewCellDelegate: AnyObject {
+    func didTapProfileButton(with model: VideoModel)
+    func didTapLikeButton(with model: VideoModel)
+    func didTapCommentButton(with model: VideoModel)
+    func didTapShareButton(with model: VideoModel)
+}
+
 class VideoCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "VideoCollectionViewCell"
+    
+    // Labels
+    private let usernameLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    private let captionLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    private let audioLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    
+    // Buttons
+    private let profileButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let likeButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let commentButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    private let shareButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    
+    // Delegate
+    weak var delegate: VideoCollectionViewCellDelegate?
     
     // Subviews
     var player: AVPlayer?
@@ -21,6 +69,61 @@ class VideoCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = .black
         contentView.clipsToBounds = true
+        addSubviews()
+    }
+    
+    private func addSubviews() {
+        
+        contentView.addSubview(usernameLabel)
+        contentView.addSubview(captionLabel)
+        contentView.addSubview(audioLabel)
+        
+        contentView.addSubview(profileButton)
+        contentView.addSubview(likeButton)
+        contentView.addSubview(commentButton)
+        contentView.addSubview(shareButton)
+        
+        // Add button actions
+        profileButton.addTarget(self, action: #selector(didTapProfileButton), for: .touchDown)
+        likeButton.addTarget(self, action: #selector(didTapLikeButton), for: .touchDown)
+        commentButton.addTarget(self, action: #selector(didTapCommentButton), for: .touchDown)
+        shareButton.addTarget(self, action: #selector(didTapShareButton), for: .touchDown)
+        
+    }
+    
+    // Button selector functions
+    @objc private func didTapProfileButton() {
+        guard let model = model else { return }
+        delegate?.didTapProfileButton(with: model)
+    }
+    
+    @objc private func didTapLikeButton() {
+        guard let model = model else { return }
+        delegate?.didTapLikeButton(with: model)
+    }
+    
+    @objc private func didTapCommentButton() {
+        guard let model = model else { return }
+        delegate?.didTapCommentButton(with: model)
+    }
+    
+    @objc private func didTapShareButton() {
+        guard let model = model else { return }
+        delegate?.didTapShareButton(with: model)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        // Labels
+        usernameLabel.text = nil
+        captionLabel.text = nil
+        audioLabel.text = nil
+        
     }
     
     private func configureVideo() {
@@ -51,4 +154,4 @@ class VideoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-}   // #55
+}   // #158
