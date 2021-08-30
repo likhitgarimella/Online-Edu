@@ -9,6 +9,11 @@ import UIKit
 
 class MessagesViewController: UIViewController {
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Direct Message"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,4 +22,4 @@ class MessagesViewController: UIViewController {
         
     }
     
-}   // #21
+}   // #26

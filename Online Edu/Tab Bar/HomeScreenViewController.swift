@@ -25,7 +25,7 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         
         for _ in 0..<10 {
-            let model = VideoModel(caption: "This is fascinating!", username: "@likhitgarimella", audioTrackName: "Linkin Park", videoFileName: "video", videoFileFormat: "mp4")
+            let model = VideoModel(caption: "I love Friends!", username: "@likhitgarimella", audioTrackName: "Chandler Bing Sarcasm", videoFileName: "video", videoFileFormat: "mp4")
             data.append(model)
         }
         

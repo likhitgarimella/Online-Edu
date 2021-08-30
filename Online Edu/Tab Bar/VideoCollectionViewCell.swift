@@ -175,6 +175,12 @@ class VideoCollectionViewCell: UICollectionViewCell {
         player?.volume = 1000
         player?.play()
         
+        if player!.rate > 0
+        {
+            player!.pause()
+            player = nil
+        }
+        
     }
     
     public func configure(with model: VideoModel) {
@@ -188,4 +194,4 @@ class VideoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-}   // #192
+}   // #198
