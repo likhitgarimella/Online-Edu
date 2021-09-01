@@ -12,7 +12,7 @@ import Toast_Swift
 import MBProgressHUD
 import SDWebImage
 
-class CoursesViewController: UIViewController, UISearchBarDelegate {
+class CoursesViewController: UIViewController {
     
     @IBOutlet var coursesCollectionView: UICollectionView!
     
@@ -23,13 +23,19 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
     var dataInfo: NSMutableArray = []
     
     /// copy of reference
-    var realDataInfo: NSMutableArray = []
+    // var realDataInfo: NSMutableArray = []
     
     // var filteredItems = [String]()
     
     /// global label-1
     var labelOneText: String?
     var labelTwoText: String?
+    
+    var searching = false
+    
+    var searchedList: NSMutableArray = []
+    
+    let searchController = UISearchController(searchResultsController: nil)
     
     func apiCalling() {
         
@@ -74,7 +80,7 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
                             let data = resultValue["data"] as! NSArray
                             self.dataInfo = NSMutableArray(array: data)
                             
-                            self.realDataInfo = self.dataInfo
+                            // self.realDataInfo = self.dataInfo
                             self.coursesCollectionView.reloadData()
                             
                             print("6666--------------------------------6666")
@@ -118,8 +124,26 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
         
         apiCalling()
         
+        configureSearchController()
+        
     }
     
+    private func configureSearchController() {
+        
+        searchController.loadViewIfNeeded()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.enablesReturnKeyAutomatically = false
+        searchController.searchBar.returnKeyType = UIReturnKeyType.done
+        self.navigationItem.searchController = searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = true
+        searchController.searchBar.placeholder = "Search Courses"
+        
+    }
+    
+    /// Search delg func
+    /*
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         let searchView: UICollectionReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SearchBar", for: indexPath)
@@ -127,7 +151,9 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
         return searchView
         
     }
+    */
     
+    /// Search delg func
     /*
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -148,6 +174,7 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
     }
     */
     
+    /// Search delg func
     /*
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -167,7 +194,8 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
         
     }
     */
- 
+    
+    /// Search delg func
     /*
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
@@ -188,6 +216,7 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
     }
     */
     
+    /// Search delg func
     /*
     func searchBarSearchButtonClicked(for searchController: UISearchController) {
         
@@ -209,30 +238,89 @@ class CoursesViewController: UIViewController, UISearchBarDelegate {
     
 }
 
-extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return realDataInfo.count
+        
+        if searching {
+            return searchedList.count
+        } else {
+            return dataInfo.count
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoursesCollectionViewCell", for: indexPath) as! CoursesCollectionViewCell
         
-        let dic = realDataInfo[indexPath.row] as! NSDictionary
-        if (dic["title"] as? String) != "" {
-            cell.labelOne.text! = dic["title"] as! String
-            print(cell.labelOne.text!)
-            labelOneText = cell.labelOne.text!
-            print(labelOneText!)
+        if searching {
+            
+            let dic = searchedList[indexPath.row] as! NSDictionary
+            if (dic["title"] as? String) != "" {
+                cell.labelOne.text! = dic["title"] as! String
+                print(cell.labelOne.text!)
+                labelOneText = cell.labelOne.text!
+                print(labelOneText!)
+            }
+            if (dic["description"] as? String) != "" {
+                cell.labelTwo.text! = dic["description"] as! String
+            }
+            let imageUrl = dic["thumbnail"] as! String
+            cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
+            
+        } else {
+            
+            let dic = dataInfo[indexPath.row] as! NSDictionary
+            if (dic["title"] as? String) != "" {
+                cell.labelOne.text! = dic["title"] as! String
+                print(cell.labelOne.text!)
+                labelOneText = cell.labelOne.text!
+                print(labelOneText!)
+            }
+            if (dic["description"] as? String) != "" {
+                cell.labelTwo.text! = dic["description"] as! String
+            }
+            let imageUrl = dic["thumbnail"] as! String
+            cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
+            
         }
-        if (dic["description"] as? String) != "" {
-            cell.labelTwo.text! = dic["description"] as! String
-        }
-        let imageUrl = dic["thumbnail"] as! String
-        cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
         
         return cell
+        
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        let searchText = searchController.searchBar.text!
+        
+        if !searchText.isEmpty {
+            
+            searching = true
+            searchedList.removeAllObjects()
+            for item in dataInfo {
+                if ((labelOneText?.lowercased().contains(searchText.lowercased())) != nil) {
+                    searchedList.add(item)
+                }
+            }
+            
+        } else {
+            
+            searching = false
+            searchedList.removeAllObjects()
+            searchedList = dataInfo
+            
+        }
+        
+        coursesCollectionView.reloadData()
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+        searching = false
+        searchedList.removeAllObjects()
+        coursesCollectionView.reloadData()
         
     }
     
@@ -256,4 +344,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #260
+}   // #348
