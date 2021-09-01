@@ -22,18 +22,20 @@ class CoursesViewController: UIViewController {
     
     var dataInfo: NSMutableArray = []
     
-    /// copy of reference
     // var realDataInfo: NSMutableArray = []
     
     // var filteredItems = [String]()
     
-    /// global label-1
+    var courseList = [CourseData]()
+    
+    var searchedList = [CourseData]()
+    
+    /// global labels
     var labelOneText: String?
     var labelTwoText: String?
+    var imageUrlString: String?
     
     var searching = false
-    
-    var searchedList: NSMutableArray = []
     
     let searchController = UISearchController(searchResultsController: nil)
     
@@ -123,6 +125,8 @@ class CoursesViewController: UIViewController {
         // searchBar.delegate = self
         
         apiCalling()
+        
+        // fillData()
         
         configureSearchController()
         
@@ -256,6 +260,10 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         if searching {
             
+            cell.photoImg.image = UIImage(named: searchedList[indexPath.row].courseImage)
+            cell.labelOne.text = searchedList[indexPath.row].titleText
+            cell.labelTwo.text = searchedList[indexPath.row].descText
+            
             let dic = searchedList[indexPath.row] as! NSDictionary
             if (dic["title"] as? String) != "" {
                 cell.labelOne.text! = dic["title"] as! String
@@ -265,11 +273,21 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
             if (dic["description"] as? String) != "" {
                 cell.labelTwo.text! = dic["description"] as! String
+                print(cell.labelTwo.text!)
+                labelTwoText = cell.labelTwo.text!
+                print(labelTwoText!)
             }
             let imageUrl = dic["thumbnail"] as! String
+            print(imageUrl)
+            imageUrlString = imageUrl
+            print(imageUrlString!)
             cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
             
         } else {
+            
+            // cell.photoImg.image = UIImage(named: dataInfo[indexPath.row].courseImage)
+            // cell.labelOne.text = courseList[indexPath.row].titleText
+            // cell.labelTwo.text = courseList[indexPath.row].descText
             
             let dic = dataInfo[indexPath.row] as! NSDictionary
             if (dic["title"] as? String) != "" {
@@ -280,8 +298,14 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
             if (dic["description"] as? String) != "" {
                 cell.labelTwo.text! = dic["description"] as! String
+                print(cell.labelTwo.text!)
+                labelTwoText = cell.labelTwo.text!
+                print(labelTwoText!)
             }
             let imageUrl = dic["thumbnail"] as! String
+            print(imageUrl)
+            imageUrlString = imageUrl
+            print(imageUrlString!)
             cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
             
         }
@@ -297,18 +321,18 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         if !searchText.isEmpty {
             
             searching = true
-            searchedList.removeAllObjects()
-            for item in dataInfo {
+            searchedList.removeAll()
+            for item in courseList {
                 if ((labelOneText?.lowercased().contains(searchText.lowercased())) != nil) {
-                    searchedList.add(item)
+                    searchedList.append(item)
                 }
             }
             
         } else {
             
             searching = false
-            searchedList.removeAllObjects()
-            searchedList = dataInfo
+            searchedList.removeAll()
+            searchedList = courseList
             
         }
         
@@ -319,7 +343,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
         searching = false
-        searchedList.removeAllObjects()
+        searchedList.removeAll()
         coursesCollectionView.reloadData()
         
     }
@@ -344,4 +368,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #348
+}   // #372
