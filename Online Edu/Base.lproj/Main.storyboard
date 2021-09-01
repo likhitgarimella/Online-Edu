@@ -1126,7 +1126,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="courseImg" translatesAutoresizingMaskIntoConstraints="NO" id="6EH-Tp-CUs">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6EH-Tp-CUs">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="cKL-2j-MPG"/>
@@ -1193,8 +1193,8 @@
                         <viewLayoutGuide key="safeArea" id="PXD-ml-hVz"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5eT-7R-1nf" firstAttribute="top" secondItem="PXD-ml-hVz" secondAttribute="top" constant="8" id="4M8-wK-Hsn"/>
                             <constraint firstItem="PXD-ml-hVz" firstAttribute="trailing" secondItem="5eT-7R-1nf" secondAttribute="trailing" constant="4" id="UDb-fp-W3Q"/>
+                            <constraint firstItem="5eT-7R-1nf" firstAttribute="top" secondItem="PXD-ml-hVz" secondAttribute="top" constant="8" id="eTY-c8-fie"/>
                             <constraint firstItem="PXD-ml-hVz" firstAttribute="bottom" secondItem="5eT-7R-1nf" secondAttribute="bottom" constant="4" id="fSx-Au-nIa"/>
                             <constraint firstItem="5eT-7R-1nf" firstAttribute="leading" secondItem="PXD-ml-hVz" secondAttribute="leading" constant="4" id="wny-LO-oUp"/>
                         </constraints>
@@ -1319,25 +1319,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="132.33333333333334" height="19"/>
+            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
         </designable>
         <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="110.33333333333333" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
         </designable>
         <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -1347,7 +1347,6 @@
         <image name="add" width="62" height="62"/>
         <image name="blueBg" width="385" height="356"/>
         <image name="continue" width="342" height="59"/>
-        <image name="courseImg" width="102" height="124"/>
         <image name="home" width="24" height="19"/>
         <image name="liveImg" width="103" height="124"/>
         <image name="login" width="431" height="447"/>
