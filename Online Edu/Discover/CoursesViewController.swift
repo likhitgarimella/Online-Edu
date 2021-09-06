@@ -140,9 +140,11 @@ class CoursesViewController: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.enablesReturnKeyAutomatically = false
         searchController.searchBar.returnKeyType = UIReturnKeyType.done
+        searchController.searchBar.placeholder = "Search Courses"
+        
         self.navigationItem.searchController = searchController
         self.navigationItem.hidesSearchBarWhenScrolling = true
-        searchController.searchBar.placeholder = "Search Courses"
+        UINavigationBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
         
     }
     
@@ -246,11 +248,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if searching {
-            return searchedList.count
-        } else {
-            return dataInfo.count
-        }
+        return dataInfo.count
         
     }
     
@@ -258,17 +256,42 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoursesCollectionViewCell", for: indexPath) as! CoursesCollectionViewCell
         
+        // let post = dataInfo[indexPath.row]
+        // cell.coursePost = post
+        // cell.coursesFeedVC = self
+        
+        let dic = dataInfo[indexPath.row] as! NSDictionary
+        if (dic["title"] as? String) != "" {
+            cell.labelOne.text! = dic["title"] as! String
+            print(cell.labelOne.text!)
+            // post.titleText = cell.labelOne.text!
+            // print(post.titleText)
+            // labelOneText = post.titleText
+            // print(labelOneText!)
+        }
+        if (dic["description"] as? String) != "" {
+            cell.labelTwo.text! = dic["description"] as! String
+            print(cell.labelTwo.text!)
+            labelTwoText = cell.labelTwo.text!
+            print(labelTwoText!)
+        }
+        
+        let imageUrl = dic["thumbnail"] as! String
+        print(imageUrl)
+        imageUrlString = imageUrl
+        print(imageUrlString!)
+        cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
+        
+        /*
         if searching {
-            
-            cell.photoImg.image = UIImage(named: searchedList[indexPath.row].courseImage)
-            cell.labelOne.text = searchedList[indexPath.row].titleText
-            cell.labelTwo.text = searchedList[indexPath.row].descText
             
             let dic = searchedList[indexPath.row] as! NSDictionary
             if (dic["title"] as? String) != "" {
                 cell.labelOne.text! = dic["title"] as! String
                 print(cell.labelOne.text!)
-                labelOneText = cell.labelOne.text!
+                post.titleText = cell.labelOne.text!
+                print(post.titleText)
+                labelOneText = post.titleText
                 print(labelOneText!)
             }
             if (dic["description"] as? String) != "" {
@@ -285,15 +308,13 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
             
         } else {
             
-            // cell.photoImg.image = UIImage(named: dataInfo[indexPath.row].courseImage)
-            // cell.labelOne.text = courseList[indexPath.row].titleText
-            // cell.labelTwo.text = courseList[indexPath.row].descText
-            
-            let dic = dataInfo[indexPath.row] as! NSDictionary
+            let dic = courseList[indexPath.row] as! NSDictionary
             if (dic["title"] as? String) != "" {
                 cell.labelOne.text! = dic["title"] as! String
                 print(cell.labelOne.text!)
-                labelOneText = cell.labelOne.text!
+                post.titleText = cell.labelOne.text!
+                print(post.titleText)
+                labelOneText = post.titleText
                 print(labelOneText!)
             }
             if (dic["description"] as? String) != "" {
@@ -309,6 +330,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
             cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
             
         }
+        */
         
         return cell
         
@@ -368,4 +390,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #372
+}   // #394

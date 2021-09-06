@@ -14,6 +14,27 @@ class CoursesCollectionViewCell: UICollectionViewCell {
     @IBOutlet var photoImg: UIImageView!
     @IBOutlet var bottomView: UIView!
     
+    // linking feed VC & post cell
+    var coursesFeedVC: CoursesViewController?
+    
+    var coursePost: CourseData? {
+        didSet {
+            updateView()
+        }
+    }
+    
+    func updateView() {
+        
+        labelOne.text = coursePost?.titleText
+        labelTwo.text = coursePost?.descText
+        
+        if let photoUrlString = coursePost?.courseImage {
+            let photoUrl = URL(string: photoUrlString)
+            photoImg.sd_setImage(with: photoUrl)
+        }
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -23,4 +44,4 @@ class CoursesCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #27
+}   // #48
