@@ -1317,29 +1317,6 @@
             <point key="canvasLocation" x="5134.7826086956529" y="138.99456521739131"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
-        </designable>
-        <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
-        </designable>
-        <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
-        </designable>
-        <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
-        </designable>
-        <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
-        </designable>
-        <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
-        </designable>
-        <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="KTQ-8T-t15"/>
     </inferredMetricsTieBreakers>
