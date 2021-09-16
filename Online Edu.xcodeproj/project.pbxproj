@@ -261,9 +261,7 @@
 		0285A00326D824BB003E593D /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
-				0285A00426D824E9003E593D /* HomeScreenViewController.swift */,
-				0285A02A26DB1B52003E593D /* video.mp4 */,
-				0285A02626DAF0D3003E593D /* VideoCollectionViewCell.swift */,
+				0290077926F336B9003215D6 /* Home */,
 				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
 				0285A00826D8252B003E593D /* AddViewController.swift */,
 				0285A00A26D8254D003E593D /* InboxViewController.swift */,
@@ -276,15 +274,10 @@
 		0285A00E26D8267D003E593D /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				0285A00F26D8269B003E593D /* LiveViewController.swift */,
-				0285A01C26D90180003E593D /* LiveCollectionViewCell.swift */,
-				0285A02226D97F53003E593D /* AuthorsViewController.swift */,
-				0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */,
-				020E4F4826DF40D0005889E0 /* CourseData.swift */,
-				0285A01126D826B3003E593D /* CoursesViewController.swift */,
-				0285A01E26D9018C003E593D /* CoursesCollectionViewCell.swift */,
-				0285A01326D826CC003E593D /* TrendingViewController.swift */,
-				0285A01526D8C507003E593D /* TrendingCollectionViewCell.swift */,
+				0290077526F33618003215D6 /* Live */,
+				0290077626F3361F003215D6 /* Authors */,
+				0290077726F33627003215D6 /* Courses */,
+				0290077826F3362D003215D6 /* Trending */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -296,6 +289,53 @@
 				0285A01A26D8F2D4003E593D /* InterestsCollectionViewCell.swift */,
 			);
 			path = Topics;
+			sourceTree = "<group>";
+		};
+		0290077526F33618003215D6 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				0285A00F26D8269B003E593D /* LiveViewController.swift */,
+				0285A01C26D90180003E593D /* LiveCollectionViewCell.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		0290077626F3361F003215D6 /* Authors */ = {
+			isa = PBXGroup;
+			children = (
+				0285A02226D97F53003E593D /* AuthorsViewController.swift */,
+				0285A02026D97F44003E593D /* AuthorsCollectionViewCell.swift */,
+			);
+			path = Authors;
+			sourceTree = "<group>";
+		};
+		0290077726F33627003215D6 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				020E4F4826DF40D0005889E0 /* CourseData.swift */,
+				0285A01126D826B3003E593D /* CoursesViewController.swift */,
+				0285A01E26D9018C003E593D /* CoursesCollectionViewCell.swift */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		0290077826F3362D003215D6 /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				0285A01326D826CC003E593D /* TrendingViewController.swift */,
+				0285A01526D8C507003E593D /* TrendingCollectionViewCell.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		0290077926F336B9003215D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0285A00426D824E9003E593D /* HomeScreenViewController.swift */,
+				0285A02A26DB1B52003E593D /* video.mp4 */,
+				0285A02626DAF0D3003E593D /* VideoCollectionViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E72967CB23CDCA951939447A /* Pods */ = {
