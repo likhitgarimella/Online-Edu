@@ -9,12 +9,12 @@ import UIKit
 
 class CoursesCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var labelOne: UILabel!
-    @IBOutlet var labelTwo: UILabel!
+    // @IBOutlet var labelOne: UILabel!
+    // @IBOutlet var labelTwo: UILabel!
     @IBOutlet var photoImg: UIImageView!
-    @IBOutlet var bottomView: UIView!
+    // @IBOutlet var bottomView: UIView!
     
-    // linking feed VC & post cell
+    /// linking feed VC & post cell
     var coursesFeedVC: CoursesViewController?
     
     var coursePost: CourseData? {
@@ -25,10 +25,10 @@ class CoursesCollectionViewCell: UICollectionViewCell {
     
     func updateView() {
         
-        labelOne.text = coursePost?.titleText
-        labelTwo.text = coursePost?.descText
+        // labelOne.text = coursePost?.titleText
+        // labelTwo.text = coursePost?.descText
         
-        if let photoUrlString = coursePost?.courseImage {
+        if let photoUrlString = coursePost?.thumbnail {
             let photoUrl = URL(string: photoUrlString)
             photoImg.sd_setImage(with: photoUrl)
         }
@@ -39,8 +39,8 @@ class CoursesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         photoImg.layer.cornerRadius = 12
-        bottomView.layer.cornerRadius = 12
-        bottomView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        // bottomView.layer.cornerRadius = 12
+        // bottomView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
     }
     

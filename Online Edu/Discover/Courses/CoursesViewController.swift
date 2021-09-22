@@ -22,13 +22,13 @@ class CoursesViewController: UIViewController {
     
     var dataInfo: NSMutableArray = []
     
+    // var dataInfo: NSMutableArray = [CourseData()]
     // var realDataInfo: NSMutableArray = []
-    
-    // var filteredItems = [String]()
     
     var courseList = [CourseData]()
     
     var searchedList = [CourseData]()
+    // var filteredItems = [String]()
     
     /// global labels
     var labelOneText: String?
@@ -119,6 +119,8 @@ class CoursesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        coursesCollectionView.backgroundColor = UIColor.white
+        
         coursesCollectionView.dataSource = self
         coursesCollectionView.delegate = self
         
@@ -128,10 +130,11 @@ class CoursesViewController: UIViewController {
         
         // fillData()
         
-        configureSearchController()
+        // configureSearchController()
         
     }
     
+    /*
     private func configureSearchController() {
         
         searchController.loadViewIfNeeded()
@@ -147,6 +150,7 @@ class CoursesViewController: UIViewController {
         UINavigationBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
         
     }
+    */
     
     /// Search delg func
     /*
@@ -246,12 +250,12 @@ class CoursesViewController: UIViewController {
 
 extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
     
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return dataInfo.count
-        
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoursesCollectionViewCell", for: indexPath) as! CoursesCollectionViewCell
@@ -261,6 +265,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         // cell.coursesFeedVC = self
         
         let dic = dataInfo[indexPath.row] as! NSDictionary
+        /*
         if (dic["title"] as? String) != "" {
             cell.labelOne.text! = dic["title"] as! String
             print(cell.labelOne.text!)
@@ -275,12 +280,15 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
             labelTwoText = cell.labelTwo.text!
             print(labelTwoText!)
         }
+        */
         
         let imageUrl = dic["thumbnail"] as! String
         print(imageUrl)
         imageUrlString = imageUrl
         print(imageUrlString!)
         cell.photoImg.sd_setImage(with: URL(string: "\(imageUrl)"), placeholderImage: UIImage(named: "courseImg"))
+        
+        return cell
         
         /*
         if searching {
@@ -332,8 +340,46 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
         */
         
-        return cell
-        
+    }
+    
+    // didSelectItemAt
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CourseDetailViewController") as! CourseDetailViewController
+        /// ref for model 'post'
+        let post = courseList[indexPath.row]
+        /// storing model's strings in an arrays
+        let arr1 = post.authorName
+        let arr2 = post.courseName
+        let arr3 = post.thumbnail
+        let arr4 = post.title
+        let arr5 = post.subTitle
+        let arr6 = post.rating
+        let arr7 = post.enrollCounty
+        let arr8 = post.videoLanguage
+        let arr9 = post.currentPrice
+        let arr10 = post.previousPrice
+        let arr11 = post.discountPercent
+        let arr12 = post.offerEndsRemainingTime
+        let arr13 = post.moneyBackGuaranteeDays
+        let arr14 = post.Duration
+        let arr15 = post.description
+        /// embedding those array strings in global variables
+        vc.authorNameLabelVar = arr1!
+        vc.courseNameLabelVar = arr2!
+        vc.thumbnailImgUrl = arr3!
+        vc.titleLabelVar = arr4!
+        vc.subTitleLabelVar = arr5!
+        vc.ratingLabelVar = arr6!
+        vc.enrolCountLabelVar = arr7!
+        vc.videoLangLabelVar = arr8!
+        vc.currentPriceLabelVar = arr9!
+        vc.previousPriceLabelVar = arr10!
+        vc.discountPercentLabelVar = arr11!
+        vc.offerEndsTimeLabelVar = arr12!
+        vc.moneyBackDaysLabelVar = arr13!
+        vc.durationLabelVar = arr14!
+        vc.descriptionLabelVar = arr15!
+        self.present(vc, animated: true, completion: nil)
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -390,4 +436,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #394
+}   // #440

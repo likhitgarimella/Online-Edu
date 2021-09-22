@@ -16,6 +16,8 @@ class LiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        liveCollectionView.backgroundColor = UIColor.white
+        
         liveCollectionView.dataSource = self
         liveCollectionView.delegate = self
         
@@ -58,4 +60,4 @@ extension LiveViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 2 - 2, height: collectionView.frame.size.width / 2 - 2)
     }
     
-}   // #62
+}   // #64

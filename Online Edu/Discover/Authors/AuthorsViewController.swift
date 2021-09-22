@@ -108,6 +108,8 @@ class AuthorsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        authorsCollectionView.backgroundColor = UIColor.white
+        
         authorsCollectionView.dataSource = self
         authorsCollectionView.delegate = self
         
@@ -164,4 +166,4 @@ extension AuthorsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #168
+}   // #170

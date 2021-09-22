@@ -109,6 +109,8 @@ class TrendingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        trendingCollectionView.backgroundColor = UIColor.white
+        
         trendingCollectionView.dataSource = self
         trendingCollectionView.delegate = self
         
@@ -164,4 +166,4 @@ extension TrendingViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #168
+}   // #170
