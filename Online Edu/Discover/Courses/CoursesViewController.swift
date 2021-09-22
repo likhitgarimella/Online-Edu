@@ -345,6 +345,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
     // didSelectItemAt
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CourseDetailViewController") as! CourseDetailViewController
+        /*
         /// ref for model 'post'
         let post = courseList[indexPath.row]
         /// storing model's strings in an arrays
@@ -379,6 +380,7 @@ extension CoursesViewController: UICollectionViewDelegate, UICollectionViewDataS
         vc.moneyBackDaysLabelVar = arr13!
         vc.durationLabelVar = arr14!
         vc.descriptionLabelVar = arr15!
+        */
         self.present(vc, animated: true, completion: nil)
     }
     
@@ -436,4 +438,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #440
+}   // #442

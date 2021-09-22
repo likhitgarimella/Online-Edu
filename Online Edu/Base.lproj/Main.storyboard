@@ -1178,7 +1178,7 @@
         <!--Course Detail View Controller-->
         <scene sceneID="RXy-6y-875">
             <objects>
-                <viewController storyboardIdentifier="CourseDetailViewController" modalPresentationStyle="fullScreen" id="DKL-wv-bFN" customClass="CourseDetailViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CourseDetailViewController" id="DKL-wv-bFN" customClass="CourseDetailViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYl-ir-4KA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -45,19 +45,23 @@ class CourseDetailViewController: UIViewController {
     
     func Properties() {
         
+        /*
         authorNameLabel.numberOfLines = 0
         authorNameLabel.contentMode = .topLeft
         authorNameLabel.sizeToFit()
-        
+        */
+         
     }
     
     func Function() {
         
+        /*
         authorNameLabel.text = authorNameLabelVar
         courseNameLabel.text = courseNameLabelVar
         
         let photoUrl = URL(string: thumbnailImgUrl)
         thumbnailImg.sd_setImage(with: photoUrl)
+        */
         
     }
     
@@ -72,4 +76,4 @@ class CourseDetailViewController: UIViewController {
         
     }
     
-}   // #76
+}   // #80
