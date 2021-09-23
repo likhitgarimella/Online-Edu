@@ -108,6 +108,9 @@ class AuthorsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
         authorsCollectionView.backgroundColor = UIColor.white
         
         authorsCollectionView.dataSource = self
@@ -166,4 +169,4 @@ extension AuthorsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #170
+}   // #173

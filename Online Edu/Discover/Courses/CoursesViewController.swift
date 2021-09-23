@@ -119,6 +119,9 @@ class CoursesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
         coursesCollectionView.backgroundColor = UIColor.white
         
         coursesCollectionView.dataSource = self
@@ -438,4 +441,4 @@ extension CoursesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #442
+}   // #445

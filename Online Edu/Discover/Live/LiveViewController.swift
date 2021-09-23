@@ -16,6 +16,9 @@ class LiveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
+        
         liveCollectionView.backgroundColor = UIColor.white
         
         liveCollectionView.dataSource = self
