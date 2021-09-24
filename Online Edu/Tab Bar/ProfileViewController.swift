@@ -9,11 +9,27 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // Outlets
+    @IBOutlet weak var editProf: UIButton!
+    @IBOutlet weak var bookmark: UIButton!
+    
+    func Properties() {
         
-        
+        editProf.layer.cornerRadius = 4
+        bookmark.layer.cornerRadius = 4
+        editProf.layer.borderWidth = 1
+        bookmark.layer.borderWidth = 1
+        editProf.layer.borderColor = UIColor.lightGray.cgColor
+        bookmark.layer.borderColor = UIColor.lightGray.cgColor
+        bookmark.setTitle("", for: .normal)
         
     }
     
-}   // #20
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Properties()
+        
+    }
+    
+}   // #36
