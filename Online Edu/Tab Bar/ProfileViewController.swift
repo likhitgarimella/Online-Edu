@@ -13,6 +13,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var editProf: UIButton!
     @IBOutlet weak var bookmark: UIButton!
     @IBOutlet var segment: UISegmentedControl!
+    @IBOutlet var profViewOne: UIView!
+    @IBOutlet var profViewTwo: UIView!
+    @IBOutlet var profViewThree: UIView!
+    @IBOutlet var profViewFour: UIView!
     
     func Properties() {
         
@@ -42,6 +46,37 @@ class ProfileViewController: UIViewController {
         SegmentFontColor()
         
         hideKeyboardWhenTappedAround()
+        
     }
     
-}   // #48
+    // Switch Index of Segmented Control
+    @IBAction func switchSegment(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            profViewOne.alpha = 1
+            profViewTwo.alpha = 0
+            profViewThree.alpha = 0
+            profViewFour.alpha = 0
+        }
+        if sender.selectedSegmentIndex == 1 {
+            profViewOne.alpha = 0
+            profViewTwo.alpha = 1
+            profViewThree.alpha = 0
+            profViewFour.alpha = 0
+        }
+        if sender.selectedSegmentIndex == 2 {
+            profViewOne.alpha = 0
+            profViewTwo.alpha = 0
+            profViewThree.alpha = 1
+            profViewFour.alpha = 0
+        }
+        if sender.selectedSegmentIndex == 3 {
+            profViewOne.alpha = 0
+            profViewTwo.alpha = 0
+            profViewThree.alpha = 0
+            profViewFour.alpha = 1
+        }
+        
+    }
+    
+}   // #83
