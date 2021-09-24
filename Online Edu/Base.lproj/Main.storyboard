@@ -1263,16 +1263,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mFO-U1-Ovo">
+                                <rect key="frame" x="10" y="555.33333333333337" width="394" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="" image="profTab1"/>
+                                    <segment title="" image="profTab2"/>
+                                    <segment title="" image="profTab3"/>
+                                    <segment title="" image="profTab4"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XUG-Fi-Cxw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GC1-ZF-4z0" firstAttribute="top" secondItem="XUG-Fi-Cxw" secondAttribute="top" constant="-44" id="1Fb-uw-u4C"/>
                             <constraint firstItem="hqW-x5-t9c" firstAttribute="centerX" secondItem="afs-bY-OzG" secondAttribute="centerX" id="3IO-7R-aJf"/>
+                            <constraint firstItem="XUG-Fi-Cxw" firstAttribute="trailing" secondItem="mFO-U1-Ovo" secondAttribute="trailing" constant="10" id="HpT-Kg-A0I"/>
                             <constraint firstItem="323-1o-V9U" firstAttribute="centerX" secondItem="afs-bY-OzG" secondAttribute="centerX" id="Iky-y4-Ca2"/>
                             <constraint firstItem="XUG-Fi-Cxw" firstAttribute="trailing" secondItem="GC1-ZF-4z0" secondAttribute="trailing" id="JPM-tq-zfH"/>
                             <constraint firstItem="GC1-ZF-4z0" firstAttribute="leading" secondItem="XUG-Fi-Cxw" secondAttribute="leading" id="PB7-OX-WRW"/>
                             <constraint firstItem="ghW-er-KNB" firstAttribute="top" secondItem="543-E4-Jym" secondAttribute="bottom" constant="10" id="Ron-dN-YkR"/>
+                            <constraint firstItem="mFO-U1-Ovo" firstAttribute="leading" secondItem="XUG-Fi-Cxw" secondAttribute="leading" constant="10" id="Vuf-eQ-uwa"/>
                             <constraint firstItem="TFM-cy-fLL" firstAttribute="leading" secondItem="XUG-Fi-Cxw" secondAttribute="leading" constant="20" id="W4Y-2g-Ggx"/>
                             <constraint firstItem="ghW-er-KNB" firstAttribute="centerX" secondItem="afs-bY-OzG" secondAttribute="centerX" id="WmQ-2i-yTE"/>
                             <constraint firstItem="543-E4-Jym" firstAttribute="centerX" secondItem="afs-bY-OzG" secondAttribute="centerX" id="Wt8-3c-izy"/>
@@ -1283,6 +1297,7 @@
                             <constraint firstItem="323-1o-V9U" firstAttribute="top" secondItem="ghW-er-KNB" secondAttribute="bottom" constant="10" id="lLo-pb-LAG"/>
                             <constraint firstItem="Vog-5y-WV2" firstAttribute="top" secondItem="323-1o-V9U" secondAttribute="bottom" constant="10" id="nk4-E6-Gon"/>
                             <constraint firstItem="TFM-cy-fLL" firstAttribute="centerX" secondItem="afs-bY-OzG" secondAttribute="centerX" id="wkX-H6-Urx"/>
+                            <constraint firstItem="mFO-U1-Ovo" firstAttribute="top" secondItem="hqW-x5-t9c" secondAttribute="bottom" constant="10" id="xhN-4H-kPb"/>
                             <constraint firstItem="XUG-Fi-Cxw" firstAttribute="trailing" secondItem="TFM-cy-fLL" secondAttribute="trailing" constant="20" id="ycC-oz-a9j"/>
                         </constraints>
                     </view>
@@ -1291,6 +1306,7 @@
                     <connections>
                         <outlet property="bookmark" destination="a9g-qa-djR" id="5oX-RT-riC"/>
                         <outlet property="editProf" destination="Hdi-10-OZQ" id="Uvx-qi-HAd"/>
+                        <outlet property="segment" destination="mFO-U1-Ovo" id="E2u-Sr-dZv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8Z-3m-4RZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1846,7 +1862,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="KTQ-8T-t15"/>
+        <segue reference="TdD-f3-c2Z"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="add" width="62" height="62"/>
@@ -1869,6 +1885,10 @@
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="profBg" width="361" height="241"/>
         <image name="profPic" width="141" height="141"/>
+        <image name="profTab1" width="10" height="13"/>
+        <image name="profTab2" width="13.333333015441895" height="15"/>
+        <image name="profTab3" width="16.666666030883789" height="14.666666984558105"/>
+        <image name="profTab4" width="11.333333015441895" height="15"/>
         <image name="search" width="22" height="22"/>
         <image name="seeAll" width="24" height="24"/>
         <image name="signup" width="431" height="397"/>

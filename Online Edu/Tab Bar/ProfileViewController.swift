@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController {
     // Outlets
     @IBOutlet weak var editProf: UIButton!
     @IBOutlet weak var bookmark: UIButton!
+    @IBOutlet var segment: UISegmentedControl!
     
     func Properties() {
         
@@ -25,11 +26,22 @@ class ProfileViewController: UIViewController {
         
     }
     
+    func SegmentFontColor() {
+        
+        // Selected option color
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+        // Color of other options
+        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Properties()
+        SegmentFontColor()
         
+        hideKeyboardWhenTappedAround()
     }
     
-}   // #36
+}   // #48
