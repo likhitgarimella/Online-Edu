@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sx-mE-TCF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30e-Tj-v6A">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1894,10 +1894,10 @@
             </objects>
             <point key="canvasLocation" x="1761" y="597"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Privacy View Controller-->
         <scene sceneID="JJr-yd-UWw">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yQ4-XK-mdX" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="yQ4-XK-mdX" customClass="SettingsPrivacyViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VXZ-Kj-lgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1937,12 +1937,12 @@
             </objects>
             <point key="canvasLocation" x="1027.536231884058" y="1514.6739130434785"/>
         </scene>
-        <!--View Controller-->
+        <!--Prof Segm Four View Controller-->
         <scene sceneID="dVa-gv-LBC">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="bAn-lb-TXy" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="bAn-lb-TXy" customClass="ProfSegmFourViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ht5-TT-92I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
@@ -1951,10 +1951,10 @@
             </objects>
             <point key="canvasLocation" x="2058" y="1287"/>
         </scene>
-        <!--View Controller-->
+        <!--Prof Segm Three View Controller-->
         <scene sceneID="usZ-d1-f8h">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="AOv-FL-3id" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="AOv-FL-3id" customClass="ProfSegmThreeViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Et1-tm-UQC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1965,12 +1965,12 @@
             </objects>
             <point key="canvasLocation" x="2845" y="1287"/>
         </scene>
-        <!--View Controller-->
+        <!--Prof Segm Two View Controller-->
         <scene sceneID="d14-q4-c8t">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6I8-TI-P3l" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="6I8-TI-P3l" customClass="ProfSegmTwoViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amV-xU-ZlF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
@@ -1979,12 +1979,12 @@
             </objects>
             <point key="canvasLocation" x="2058" y="1753"/>
         </scene>
-        <!--View Controller-->
+        <!--Prof Segm One View Controller-->
         <scene sceneID="bPl-w7-gIz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Fk3-fM-ZIf" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Fk3-fM-ZIf" customClass="ProfSegmOneViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLn-hX-oF4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
