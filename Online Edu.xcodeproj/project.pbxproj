@@ -50,6 +50,11 @@
 		02108AA626CEB7250046211D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA426CEB7250046211D /* Main.storyboard */; };
 		02108AA826CEB7260046211D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA726CEB7260046211D /* Assets.xcassets */; };
 		02108AAB26CEB7260046211D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA926CEB7260046211D /* LaunchScreen.storyboard */; };
+		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
+		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
+		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
+		024C5B0E26FE06200044FCDC /* ProfSegmFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0D26FE06200044FCDC /* ProfSegmFourViewController.swift */; };
+		024C5B1026FE06510044FCDC /* SettingsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0F26FE06510044FCDC /* SettingsPrivacyViewController.swift */; };
 		02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFD26D6C1C5003E593D /* Reachability.swift */; };
 		0285A00226D82499003E593D /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00126D82498003E593D /* InterestsViewController.swift */; };
 		0285A00526D824E9003E593D /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00426D824E9003E593D /* HomeScreenViewController.swift */; };
@@ -120,6 +125,11 @@
 		02108AA726CEB7260046211D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02108AAA26CEB7260046211D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02108AAC26CEB7260046211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
+		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
+		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
+		024C5B0D26FE06200044FCDC /* ProfSegmFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmFourViewController.swift; sourceTree = "<group>"; };
+		024C5B0F26FE06510044FCDC /* SettingsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPrivacyViewController.swift; sourceTree = "<group>"; };
 		02859FFD26D6C1C5003E593D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0285A00126D82498003E593D /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		0285A00426D824E9003E593D /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -256,10 +266,24 @@
 				0285A01926D8F2B7003E593D /* Topics */,
 				0285A00326D824BB003E593D /* Tab Bar */,
 				0285A00E26D8267D003E593D /* Discover */,
+				024C5B0626FE04610044FCDC /* Profile */,
 				02108AAC26CEB7260046211D /* Info.plist */,
 				02097D1F26D003480085F7F1 /* Extensions */,
 			);
 			path = "Online Edu";
+			sourceTree = "<group>";
+		};
+		024C5B0626FE04610044FCDC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0285A00C26D8256C003E593D /* ProfileViewController.swift */,
+				024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */,
+				024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */,
+				024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */,
+				024C5B0D26FE06200044FCDC /* ProfSegmFourViewController.swift */,
+				024C5B0F26FE06510044FCDC /* SettingsPrivacyViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		0285A00326D824BB003E593D /* Tab Bar */ = {
@@ -270,7 +294,6 @@
 				0285A00826D8252B003E593D /* AddViewController.swift */,
 				0285A00A26D8254D003E593D /* InboxViewController.swift */,
 				0285A02426DA9DCB003E593D /* MessagesViewController.swift */,
-				0285A00C26D8256C003E593D /* ProfileViewController.swift */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -512,11 +535,14 @@
 				02097D1826CF8AE50085F7F1 /* SignupViewController.swift in Sources */,
 				0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */,
 				02097CD726CEC8B70085F7F1 /* HomeViewController.swift in Sources */,
+				024C5B0E26FE06200044FCDC /* ProfSegmFourViewController.swift in Sources */,
+				024C5B1026FE06510044FCDC /* SettingsPrivacyViewController.swift in Sources */,
 				0285A00B26D8254D003E593D /* InboxViewController.swift in Sources */,
 				0290077D26F35666003215D6 /* AddCourseViewController.swift in Sources */,
 				02097D1A26CF8FC60085F7F1 /* Extensions.swift in Sources */,
 				0285A00526D824E9003E593D /* HomeScreenViewController.swift in Sources */,
 				0285A00926D8252B003E593D /* AddViewController.swift in Sources */,
+				024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */,
 				0285A00D26D8256C003E593D /* ProfileViewController.swift in Sources */,
 				0285A00226D82499003E593D /* InterestsViewController.swift in Sources */,
 				02097CD326CEC7D50085F7F1 /* ViewController.swift in Sources */,
@@ -527,9 +553,11 @@
 				0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */,
 				0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */,
 				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
+				024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */,
 				0285A02126D97F44003E593D /* AuthorsCollectionViewCell.swift in Sources */,
 				0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */,
 				02097D1C26CF99EF0085F7F1 /* FloatLabelTextField.swift in Sources */,
+				024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */,
 				0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */,
 				02108A9F26CEB7250046211D /* AppDelegate.swift in Sources */,
 				02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */,

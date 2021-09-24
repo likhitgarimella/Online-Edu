@@ -175,13 +175,13 @@ class VideoCollectionViewCell: UICollectionViewCell {
         player?.volume = 1000
         player?.play()
         
-        /*
+        
         if player!.rate > 0
         {
             player!.pause()
             player = nil
         }
-        */
+        
         
     }
     

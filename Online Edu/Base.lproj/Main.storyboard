@@ -1279,28 +1279,28 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uq1-mQ-pME">
-                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="bAn-lb-TXy" kind="embed" id="Nxj-ZL-Bff"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnU-J8-Gn0">
-                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="AOv-FL-3id" kind="embed" id="r8Q-HQ-jQt"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-QA-p6Z">
-                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="6I8-TI-P3l" kind="embed" id="qSa-Cv-Mlb"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-HX-yGS">
-                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="Fk3-fM-ZIf" kind="embed" id="ydt-TT-3r7"/>
@@ -1349,7 +1349,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="CeA-Lc-sDR">
-                        <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" id="8pc-M3-0Qk"/>
+                        <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" id="8pc-M3-0Qk">
+                            <connections>
+                                <segue destination="yQ4-XK-mdX" kind="show" id="Txj-7X-Efx"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
@@ -1891,11 +1895,54 @@
             <point key="canvasLocation" x="1761" y="597"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="JJr-yd-UWw">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="yQ4-XK-mdX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VXZ-Kj-lgP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zer-6V-tGt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="907"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b85-Gy-gsW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="907"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b85-Gy-gsW" firstAttribute="top" secondItem="Zer-6V-tGt" secondAttribute="top" id="501-O4-agf"/>
+                                    <constraint firstAttribute="bottom" secondItem="b85-Gy-gsW" secondAttribute="bottom" id="7FS-AH-evg"/>
+                                    <constraint firstItem="b85-Gy-gsW" firstAttribute="leading" secondItem="Zer-6V-tGt" secondAttribute="leading" id="cbB-vw-KJo"/>
+                                    <constraint firstItem="b85-Gy-gsW" firstAttribute="width" secondItem="Zer-6V-tGt" secondAttribute="width" priority="750" id="oqN-t9-9G6"/>
+                                    <constraint firstItem="b85-Gy-gsW" firstAttribute="height" secondItem="Zer-6V-tGt" secondAttribute="height" priority="250" id="qGz-p0-BX2"/>
+                                    <constraint firstAttribute="trailing" secondItem="b85-Gy-gsW" secondAttribute="trailing" id="wy0-Ao-nS9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VCg-DO-gI7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zer-6V-tGt" firstAttribute="top" secondItem="VCg-DO-gI7" secondAttribute="top" id="2fR-JF-e00"/>
+                            <constraint firstItem="Zer-6V-tGt" firstAttribute="trailing" secondItem="VCg-DO-gI7" secondAttribute="trailing" id="2sG-Ng-gfL"/>
+                            <constraint firstItem="Zer-6V-tGt" firstAttribute="leading" secondItem="VCg-DO-gI7" secondAttribute="leading" id="PPq-7m-5VC"/>
+                            <constraint firstItem="Zer-6V-tGt" firstAttribute="bottom" secondItem="VCg-DO-gI7" secondAttribute="bottom" id="c2r-E7-tde"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ar-VS-yjU"/>
+                    <size key="freeformSize" width="414" height="1000"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZQ-Gq-llN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027.536231884058" y="1514.6739130434785"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="dVa-gv-LBC">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="bAn-lb-TXy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ht5-TT-92I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
@@ -1909,7 +1956,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="AOv-FL-3id" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Et1-tm-UQC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
@@ -1923,7 +1970,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="6I8-TI-P3l" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amV-xU-ZlF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
@@ -1937,7 +1984,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Fk3-fM-ZIf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLn-hX-oF4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
