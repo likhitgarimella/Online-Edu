@@ -22,14 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Status bar color
         /// In Info.plist, View controller-based status bar appearance -> NO
         
+        UITabBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
+        UITabBar.appearance().unselectedItemTintColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
+        UITabBar.appearance().tintColor = .white
+        UITabBar.appearance().isTranslucent = false
+        
         UINavigationBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().isTranslucent = false
-        
-        UITabBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
-        UITabBar.appearance().unselectedItemTintColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
-        UITabBar.appearance().tintColor = .white
         
         /// Increase Launch Screen Time
         Thread.sleep(forTimeInterval: 1)
@@ -52,4 +53,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-}   // #56
+}   // #57

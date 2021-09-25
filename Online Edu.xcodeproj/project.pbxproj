@@ -57,6 +57,7 @@
 		024C5B1026FE06510044FCDC /* SettingsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0F26FE06510044FCDC /* SettingsPrivacyViewController.swift */; };
 		024C5B1F26FF627E0044FCDC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B1E26FF627E0044FCDC /* HomeScreenViewController.swift */; };
 		024C5B2126FF62870044FCDC /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */; };
+		024C5B2826FF7B8B0044FCDC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B2726FF7B8B0044FCDC /* TabBarController.swift */; };
 		02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02859FFD26D6C1C5003E593D /* Reachability.swift */; };
 		0285A00226D82499003E593D /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00126D82498003E593D /* InterestsViewController.swift */; };
 		0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A00626D8250F003E593D /* DiscoverViewController.swift */; };
@@ -132,6 +133,7 @@
 		024C5B1E26FF627E0044FCDC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		024C5B2226FF628D0044FCDC /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		024C5B2726FF7B8B0044FCDC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		02859FFD26D6C1C5003E593D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0285A00126D82498003E593D /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
 		0285A00626D8250F003E593D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				02108A9E26CEB7250046211D /* AppDelegate.swift */,
 				02108AA026CEB7250046211D /* SceneDelegate.swift */,
+				024C5B2726FF7B8B0044FCDC /* TabBarController.swift */,
 				02108AA726CEB7260046211D /* Assets.xcassets */,
 				02108AA926CEB7260046211D /* LaunchScreen.storyboard */,
 				02108AA426CEB7250046211D /* Main.storyboard */,
@@ -548,6 +551,7 @@
 				024C5B1F26FF627E0044FCDC /* HomeScreenViewController.swift in Sources */,
 				020E4F4926DF40D0005889E0 /* CourseData.swift in Sources */,
 				0285A01626D8C507003E593D /* TrendingCollectionViewCell.swift in Sources */,
+				024C5B2826FF7B8B0044FCDC /* TabBarController.swift in Sources */,
 				0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */,
 				0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */,
 				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
