@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="30e-Tj-v6A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sx-mE-TCF">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -1279,28 +1279,28 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uq1-mQ-pME">
-                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
+                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="bAn-lb-TXy" kind="embed" id="Nxj-ZL-Bff"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnU-J8-Gn0">
-                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
+                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="AOv-FL-3id" kind="embed" id="r8Q-HQ-jQt"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-QA-p6Z">
-                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
+                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="6I8-TI-P3l" kind="embed" id="qSa-Cv-Mlb"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-HX-yGS">
-                                <rect key="frame" x="0.0" y="512.33333333333337" width="414" height="438.66666666666663"/>
+                                <rect key="frame" x="0.0" y="512" width="414" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="Fk3-fM-ZIf" kind="embed" id="ydt-TT-3r7"/>
@@ -1956,7 +1956,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="AOv-FL-3id" customClass="ProfSegmThreeViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Et1-tm-UQC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
