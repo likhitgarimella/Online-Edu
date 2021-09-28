@@ -42,6 +42,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Profile"
+        
         Properties()
         SegmentFontColor()
         
@@ -87,4 +89,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #91
+}   // #93

@@ -20,4 +20,4 @@ class SegmThreeCollectionViewCell: UICollectionViewCell {
         
     }
     
-}   // #15
+}   // #24

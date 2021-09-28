@@ -9,6 +9,15 @@ import UIKit
 
 class SegmFourCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet var profSegmImg: UIImageView!
+    @IBOutlet var indexLbl: UILabel!
+    @IBOutlet var viewLbl: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        profSegmImg.layer.cornerRadius = 12
+        
+    }
     
-}   // #15
+}   // #24
