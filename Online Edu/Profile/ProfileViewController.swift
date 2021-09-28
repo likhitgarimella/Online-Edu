@@ -49,6 +49,14 @@ class ProfileViewController: UIViewController {
         
     }
     
+    @IBAction func editProfPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueEditProf", sender: self)
+    }
+    
+    @IBAction func bookmarkPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueFav", sender: self)
+    }
+    
     // Switch Index of Segmented Control
     @IBAction func switchSegment(_ sender: UISegmentedControl) {
         
@@ -79,4 +87,4 @@ class ProfileViewController: UIViewController {
         
     }
     
-}   // #83
+}   // #91

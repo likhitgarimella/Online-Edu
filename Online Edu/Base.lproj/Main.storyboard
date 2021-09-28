@@ -1279,6 +1279,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Edit Profile">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="editProfPressed:" destination="fsu-y6-GFM" eventType="touchUpInside" id="ayk-QF-Q9v"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9g-qa-djR">
                                         <rect key="frame" x="130" y="0.0" width="41" height="35"/>
@@ -1286,6 +1289,9 @@
                                         <buttonConfiguration key="configuration" style="plain" image="bookmark">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="bookmarkPressed:" destination="fsu-y6-GFM" eventType="touchUpInside" id="jSR-jZ-vhV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1390,8 +1396,8 @@
                         <outlet property="profViewThree" destination="pnU-J8-Gn0" id="bZy-ON-4YA"/>
                         <outlet property="profViewTwo" destination="zV5-QA-p6Z" id="keL-nA-Ph4"/>
                         <outlet property="segment" destination="mFO-U1-Ovo" id="E2u-Sr-dZv"/>
-                        <segue destination="CNl-Gc-bsK" kind="show" id="1U1-yV-2NB"/>
-                        <segue destination="GSm-3P-j3D" kind="show" id="wbg-dm-pG3"/>
+                        <segue destination="CNl-Gc-bsK" kind="show" identifier="segueEditProf" id="1U1-yV-2NB"/>
+                        <segue destination="GSm-3P-j3D" kind="show" identifier="segueFav" id="wbg-dm-pG3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8Z-3m-4RZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2663,7 +2669,7 @@
             </objects>
             <point key="canvasLocation" x="2845" y="1752"/>
         </scene>
-        <!--Edit Profile View Controller-->
+        <!--Edit Profile-->
         <scene sceneID="lUs-r0-5jY">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="CNl-Gc-bsK" customClass="EditProfileViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2673,13 +2679,13 @@
                         <viewLayoutGuide key="safeArea" id="X6S-eu-asT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="A21-QS-qDv"/>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="A21-QS-qDv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGg-9K-Xo1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3367" y="2328"/>
         </scene>
-        <!--Favourites View Controller-->
+        <!--Favourites-->
         <scene sceneID="Rpa-PF-Loo">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GSm-3P-j3D" customClass="FavouritesViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2689,7 +2695,7 @@
                         <viewLayoutGuide key="safeArea" id="Iyy-pH-vEC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eAq-zY-2rI"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="eAq-zY-2rI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G4J-UY-8Ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
