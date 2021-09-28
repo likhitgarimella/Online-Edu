@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeVideosView: View {
     
     var body: some View {
-        Text("This is a SwiftUI View")
+        Home()
     }
     
 }
@@ -21,4 +21,12 @@ struct HomeVideosView_Previews: PreviewProvider {
         HomeVideosView()
     }
     
-}   // #25
+}
+
+struct Home: View {
+    
+    var body: some View {
+        Text("This is a SwiftUI View")
+    }
+    
+}   // #33
