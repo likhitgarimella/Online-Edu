@@ -9,16 +9,39 @@ import Foundation
 import SwiftUI
 import AVKit
 
+struct PlayerView: View {
+    
+    @Binding var data: [Video]
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            ForEach(0 ..< self.data.count) { index in
+                ZStack {
+                    Player(player: data[index].player)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        .offset(y: -5)
+                }
+            }
+        }
+    }
+    
+}
+
 struct Player: UIViewControllerRepresentable {
+    // typealias UIViewControllerType = AVPlayerViewController
     
     var player: AVPlayer
     
     func makeUIViewController(context: Context) -> some AVPlayerViewController {
-        <#code#>
+        let view = AVPlayerViewController()
+        view.player = player
+        view.showsPlaybackControls = false
+        view.videoGravity = .resizeAspectFill
+        return view
     }
     
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        <#code#>
+        
     }
     
-}   // #25
+}   // #48
