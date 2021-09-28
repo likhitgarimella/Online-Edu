@@ -1173,8 +1173,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@jacob_w" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghW-er-KNB">
-                                <rect key="frame" x="157.33333333333334" y="262" width="99.333333333333343" height="25.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@likhitgarimella" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghW-er-KNB">
+                                <rect key="frame" x="132.66666666666669" y="262" width="148.66666666666669" height="25.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1387,6 +1387,8 @@
                         <outlet property="profViewThree" destination="pnU-J8-Gn0" id="bZy-ON-4YA"/>
                         <outlet property="profViewTwo" destination="zV5-QA-p6Z" id="keL-nA-Ph4"/>
                         <outlet property="segment" destination="mFO-U1-Ovo" id="E2u-Sr-dZv"/>
+                        <segue destination="CNl-Gc-bsK" kind="show" id="1U1-yV-2NB"/>
+                        <segue destination="GSm-3P-j3D" kind="show" id="wbg-dm-pG3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8Z-3m-4RZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1917,7 +1919,7 @@
             </objects>
             <point key="canvasLocation" x="1761" y="597"/>
         </scene>
-        <!--Settings Privacy View Controller-->
+        <!--Settings and Privacy-->
         <scene sceneID="JJr-yd-UWw">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="yQ4-XK-mdX" customClass="SettingsPrivacyViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
@@ -2593,7 +2595,7 @@
                             <constraint firstItem="Zer-6V-tGt" firstAttribute="bottom" secondItem="VCg-DO-gI7" secondAttribute="bottom" id="c2r-E7-tde"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0ar-VS-yjU"/>
+                    <navigationItem key="navigationItem" title="Settings and Privacy" id="0ar-VS-yjU"/>
                     <size key="freeformSize" width="414" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZQ-Gq-llN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2659,6 +2661,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rly-zp-hFy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2845" y="1752"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="lUs-r0-5jY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="CNl-Gc-bsK" customClass="EditProfileViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBd-9L-IKr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="X6S-eu-asT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A21-QS-qDv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGg-9K-Xo1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="2328"/>
+        </scene>
+        <!--Favourites View Controller-->
+        <scene sceneID="Rpa-PF-Loo">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="GSm-3P-j3D" customClass="FavouritesViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0j-Ng-FHk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Iyy-pH-vEC"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eAq-zY-2rI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4J-UY-8Ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4104" y="2529"/>
         </scene>
     </scenes>
     <designables>

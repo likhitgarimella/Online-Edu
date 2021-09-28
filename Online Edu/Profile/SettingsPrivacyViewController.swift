@@ -12,8 +12,9 @@ class SettingsPrivacyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // remove title for left bar button item
+        navigationController?.navigationBar.topItem?.title = ""
         
     }
     
-}   // #20
+}   // #21

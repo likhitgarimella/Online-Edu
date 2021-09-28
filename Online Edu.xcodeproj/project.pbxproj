@@ -76,6 +76,8 @@
 		0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285A02426DA9DCB003E593D /* MessagesViewController.swift */; };
 		0290077B26F35649003215D6 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0290077A26F35649003215D6 /* CourseDetailViewController.swift */; };
 		0290077D26F35666003215D6 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0290077C26F35666003215D6 /* AddCourseViewController.swift */; };
+		02AB86AA2702A22200A1F095 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB86A92702A22200A1F095 /* EditProfileViewController.swift */; };
+		02AB86AC2702A24700A1F095 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB86AB2702A24700A1F095 /* FavouritesViewController.swift */; };
 		4B7B194EBF73C99B3945B820 /* Pods_Online_Edu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +154,8 @@
 		0285A02426DA9DCB003E593D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		0290077A26F35649003215D6 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		0290077C26F35666003215D6 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		02AB86A92702A22200A1F095 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		02AB86AB2702A24700A1F095 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		541459D593EA2C925D18D519 /* Pods-Online Edu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.release.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.release.xcconfig"; sourceTree = "<group>"; };
 		A7D32A969888C86B6DA4BFD8 /* Pods_Online_Edu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Online_Edu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B435E595C3DDF9D4FFADF230 /* Pods-Online Edu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Online Edu.debug.xcconfig"; path = "Target Support Files/Pods-Online Edu/Pods-Online Edu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */,
 				024C5B0D26FE06200044FCDC /* ProfSegmFourViewController.swift */,
 				024C5B0F26FE06510044FCDC /* SettingsPrivacyViewController.swift */,
+				02AB86A92702A22200A1F095 /* EditProfileViewController.swift */,
+				02AB86AB2702A24700A1F095 /* FavouritesViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -554,10 +560,12 @@
 				024C5B2826FF7B8B0044FCDC /* TabBarController.swift in Sources */,
 				0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */,
 				0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */,
+				02AB86AC2702A24700A1F095 /* FavouritesViewController.swift in Sources */,
 				0285A01226D826B3003E593D /* CoursesViewController.swift in Sources */,
 				024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */,
 				0285A02126D97F44003E593D /* AuthorsCollectionViewCell.swift in Sources */,
 				0285A00726D8250F003E593D /* DiscoverViewController.swift in Sources */,
+				02AB86AA2702A22200A1F095 /* EditProfileViewController.swift in Sources */,
 				02097D1C26CF99EF0085F7F1 /* FloatLabelTextField.swift in Sources */,
 				024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */,
 				0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */,
