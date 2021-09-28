@@ -14,11 +14,13 @@ import SDWebImage
 
 class DiscoverViewController: UIViewController {
     
+    // MARK: - Outlets
     @IBOutlet var livePreviewCollectionView: UICollectionView!
     @IBOutlet var authorsPreviewCollectionView: UICollectionView!
     @IBOutlet var coursesPreviewCollectionView: UICollectionView!
     @IBOutlet var trendingPreviewCollectionView: UICollectionView!
     
+    // MARK: - Variables
     var reachability: Reachability?
     
     var dataInfoOne: NSMutableArray = []
@@ -28,6 +30,7 @@ class DiscoverViewController: UIViewController {
     /// images in coll view
     var items = [UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex")]
     
+    // MARK: - Authors
     func apiCallingAuthors() {
         
         do {
@@ -113,6 +116,7 @@ class DiscoverViewController: UIViewController {
         
     }
     
+    // MARK: - Courses
     func apiCallingCourses() {
         
         do {
@@ -190,6 +194,7 @@ class DiscoverViewController: UIViewController {
         
     }
     
+    // MARK: - Trending
     func apiCallingTrending() {
         
         do {
@@ -275,6 +280,7 @@ class DiscoverViewController: UIViewController {
         
     }
     
+    // MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -300,6 +306,7 @@ class DiscoverViewController: UIViewController {
         
     }
     
+    // MARK: - Button Actions
     @IBAction func livePressed(_ sender: UIButton) {
         
         let taptic = UIImpactFeedbackGenerator(style: .light)
@@ -342,8 +349,10 @@ class DiscoverViewController: UIViewController {
     
 }
 
+// MARK: - Delegate functions
 extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    // numberOfItemsInSection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView == authorsPreviewCollectionView {
@@ -360,6 +369,7 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         
     }
     
+    // cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == authorsPreviewCollectionView {
@@ -390,4 +400,4 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         
     }
     
-}   // #394
+}   // #404
