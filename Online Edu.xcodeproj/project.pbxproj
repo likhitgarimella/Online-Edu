@@ -275,12 +275,7 @@
 		02108A9226CEB7250046211D = {
 			isa = PBXGroup;
 			children = (
-				021FEC362703C5BB00377E3B /* video1.mp4 */,
-				021FEC372703C5BB00377E3B /* video2.mp4 */,
-				021FEC382703C5BC00377E3B /* video3.mp4 */,
-				021FEC332703C5BB00377E3B /* video4.mp4 */,
-				021FEC352703C5BB00377E3B /* video5.mp4 */,
-				021FEC342703C5BB00377E3B /* video6.mp4 */,
+				021FEC3F2703D61900377E3B /* Videos */,
 				02097CD826CECB8D0085F7F1 /* Fonts */,
 				02108A9D26CEB7250046211D /* Online Edu */,
 				02108A9C26CEB7250046211D /* Products */,
@@ -317,6 +312,19 @@
 				02097D1F26D003480085F7F1 /* Extensions */,
 			);
 			path = "Online Edu";
+			sourceTree = "<group>";
+		};
+		021FEC3F2703D61900377E3B /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				021FEC362703C5BB00377E3B /* video1.mp4 */,
+				021FEC372703C5BB00377E3B /* video2.mp4 */,
+				021FEC382703C5BC00377E3B /* video3.mp4 */,
+				021FEC332703C5BB00377E3B /* video4.mp4 */,
+				021FEC352703C5BB00377E3B /* video5.mp4 */,
+				021FEC342703C5BB00377E3B /* video6.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		024C5B0626FE04610044FCDC /* Profile */ = {
