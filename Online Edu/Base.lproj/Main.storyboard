@@ -1385,6 +1385,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="CeA-Lc-sDR">
+                        <barButtonItem key="leftBarButtonItem" image="person.badge.plus" catalog="system" id="fai-Jv-jJz">
+                            <connections>
+                                <segue destination="Fe1-tX-1px" kind="show" id="NJE-iV-Vz8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="line.horizontal.3" catalog="system" id="8pc-M3-0Qk">
                             <connections>
                                 <segue destination="yQ4-XK-mdX" kind="show" id="Txj-7X-Efx"/>
@@ -1929,6 +1934,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTs-Vk-edJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1761" y="597"/>
+        </scene>
+        <!--Find Friends-->
+        <scene sceneID="pt3-Hk-xrb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Fe1-tX-1px" customClass="FindFriendsViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uPn-Tw-vFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4DQ-i8-d9h"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.49803921568627452" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Friends" id="pp0-rl-a1K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLM-UR-gnu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="1920"/>
         </scene>
         <!--Settings and Privacy-->
         <scene sceneID="JJr-yd-UWw">
@@ -3217,7 +3238,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="AOv-FL-3id" customClass="ProfSegmThreeViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Et1-tm-UQC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Odd-Sq-X9o">
@@ -3334,7 +3355,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="6I8-TI-P3l" customClass="ProfSegmTwoViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amV-xU-ZlF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S8x-my-74V">
@@ -3598,25 +3619,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.333333333333332"/>
         </designable>
         <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
+            <size key="intrinsicContentSize" width="132.33333333333334" height="19"/>
         </designable>
         <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="110.33333333333333" height="20.333333333333332"/>
         </designable>
         <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+            <size key="intrinsicContentSize" width="71" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
+            <size key="intrinsicContentSize" width="71" height="19"/>
         </designable>
         <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
+            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -3662,6 +3683,7 @@
         <image name="notfnImg" width="77" height="77"/>
         <image name="notification" width="22" height="22"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="playView" width="11" height="12.333333015441895"/>
         <image name="profBg" width="361" height="241"/>
         <image name="profPic" width="141" height="141"/>
