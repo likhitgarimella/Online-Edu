@@ -515,6 +515,9 @@
                                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="btnPressed:" destination="RYB-0Y-RCe" eventType="touchUpInside" id="f4o-5s-s3h"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -1651,7 +1654,6 @@
                                                 <rect key="frame" x="36" y="554.66666666666663" width="342" height="59"/>
                                                 <state key="normal" image="buyNow"/>
                                                 <connections>
-                                                    <action selector="continuePressed:" destination="NaA-GW-YcK" eventType="touchUpInside" id="k0S-LG-tr0"/>
                                                     <action selector="loginSucess:" destination="Ysl-cp-6TF" eventType="touchUpInside" id="MN3-EG-RTP"/>
                                                 </connections>
                                             </button>
@@ -1659,7 +1661,6 @@
                                                 <rect key="frame" x="34.666666666666657" y="633.66666666666663" width="345" height="62"/>
                                                 <state key="normal" image="addToCart"/>
                                                 <connections>
-                                                    <action selector="continuePressed:" destination="NaA-GW-YcK" eventType="touchUpInside" id="GtR-zw-elU"/>
                                                     <action selector="loginSucess:" destination="Ysl-cp-6TF" eventType="touchUpInside" id="1BO-rN-RHg"/>
                                                 </connections>
                                             </button>

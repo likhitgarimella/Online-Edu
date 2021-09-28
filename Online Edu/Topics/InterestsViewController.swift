@@ -99,6 +99,8 @@ class InterestsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        interestsCollectionView.backgroundColor = UIColor.white
+        
         interestsCollectionView.dataSource = self
         interestsCollectionView.delegate = self
         
@@ -158,4 +160,4 @@ extension InterestsViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 3 - 2, height: collectionView.frame.size.width / 3 - 2)
     }
     
-}   // #162
+}   // #164
