@@ -11,7 +11,7 @@ class LiveViewController: UIViewController {
     
     @IBOutlet var liveCollectionView: UICollectionView!
     
-    var dataInfo: NSMutableArray = []
+    // var dataInfo: NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,4 +63,4 @@ extension LiveViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: collectionView.frame.size.width / 2 - 2, height: collectionView.frame.size.width / 2 - 2)
     }
     
-}   // #64
+}   // #67
