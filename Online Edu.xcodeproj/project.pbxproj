@@ -51,6 +51,7 @@
 		02108AA826CEB7260046211D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA726CEB7260046211D /* Assets.xcassets */; };
 		02108AAB26CEB7260046211D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02108AA926CEB7260046211D /* LaunchScreen.storyboard */; };
 		021FEC262702F65D00377E3B /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC252702F65D00377E3B /* FindFriendsViewController.swift */; };
+		021FEC282702FAEF00377E3B /* LivePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC272702FAEF00377E3B /* LivePreviewCell.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -133,6 +134,7 @@
 		02108AAA26CEB7260046211D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02108AAC26CEB7260046211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021FEC252702F65D00377E3B /* FindFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		021FEC272702FAEF00377E3B /* LivePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePreviewCell.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
+				021FEC272702FAEF00377E3B /* LivePreviewCell.swift */,
 				0290077526F33618003215D6 /* Live */,
 				0290077626F3361F003215D6 /* Authors */,
 				0290077726F33627003215D6 /* Courses */,
@@ -589,6 +592,7 @@
 				024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */,
 				0285A01B26D8F2D4003E593D /* InterestsCollectionViewCell.swift in Sources */,
 				02108A9F26CEB7250046211D /* AppDelegate.swift in Sources */,
+				021FEC282702FAEF00377E3B /* LivePreviewCell.swift in Sources */,
 				021FEC262702F65D00377E3B /* FindFriendsViewController.swift in Sources */,
 				02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */,
 				0285A01426D826CC003E593D /* TrendingViewController.swift in Sources */,

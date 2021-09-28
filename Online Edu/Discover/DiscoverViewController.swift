@@ -9,10 +9,20 @@ import UIKit
 
 class DiscoverViewController: UIViewController {
     
+    @IBOutlet var livePreviewCollectionView: UICollectionView!
+    
+    /// images in coll view
+    var items = [UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationItem.title = "Discover"
+        
+        livePreviewCollectionView.backgroundColor = UIColor.white
+        
+        livePreviewCollectionView.dataSource = self
+        livePreviewCollectionView.delegate = self
         
     }
     
@@ -56,4 +66,21 @@ class DiscoverViewController: UIViewController {
         
     }
     
-}   // #60
+}
+
+extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        /// static
+        return (items.count)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LivePreviewCell", for: indexPath) as! LivePreviewCell
+        cell.photoImg.image = items[indexPath.row]
+        return cell
+        
+    }
+    
+}   // #87
