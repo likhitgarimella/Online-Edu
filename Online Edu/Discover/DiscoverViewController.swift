@@ -20,6 +20,8 @@ class DiscoverViewController: UIViewController {
     @IBOutlet var coursesPreviewCollectionView: UICollectionView!
     @IBOutlet var trendingPreviewCollectionView: UICollectionView!
     
+    @IBOutlet var searchBarBtn: UIButton!
+    
     // MARK: - Variables
     var reachability: Reachability?
     
@@ -29,6 +31,12 @@ class DiscoverViewController: UIViewController {
     
     /// images in coll view
     var items = [UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex")]
+    
+    func Properties() {
+        searchBarBtn.layer.cornerRadius = 12
+        searchBarBtn.layer.borderWidth = 0.6
+        searchBarBtn.layer.borderColor = UIColor.gray.cgColor
+    }
     
     // MARK: - Authors
     func apiCallingAuthors() {
@@ -300,6 +308,8 @@ class DiscoverViewController: UIViewController {
         trendingPreviewCollectionView.dataSource = self
         trendingPreviewCollectionView.delegate = self
         
+        Properties()
+        
         apiCallingAuthors()
         apiCallingCourses()
         apiCallingTrending()
@@ -344,6 +354,12 @@ class DiscoverViewController: UIViewController {
         taptic.impactOccurred()
         
         self.performSegue(withIdentifier: "trending", sender: self)
+        
+    }
+    
+    @IBAction func searchBarBtnPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToSearch", sender: self)
         
     }
     
@@ -400,4 +416,4 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         
     }
     
-}   // #404
+}   // #420
