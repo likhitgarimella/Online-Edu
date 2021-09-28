@@ -15,9 +15,9 @@ struct VideoModel {
     let videoFileFormat: String
 }
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, UITabBarControllerDelegate {
     
-    private var collectionView: UICollectionView?
+    private var collectionView: UICollectionView!
     
     private var data = [VideoModel]()
     
@@ -44,6 +44,14 @@ class HomeScreenViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView?.frame = view.bounds
+    }
+    
+    // Scroll to top in coll view when tapped on tab bar icon
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let tabBarIndex = tabBarController.selectedIndex
+        if tabBarIndex == 0 {
+            self.collectionView.setContentOffset(CGPoint.zero, animated: true)
+        }
     }
     
 }
@@ -78,4 +86,4 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
         print("Share button tapped")
     }
     
-}   // #82
+}   // #90
