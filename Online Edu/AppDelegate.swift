@@ -25,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
         UITabBar.appearance().unselectedItemTintColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1.0)
         UITabBar.appearance().tintColor = .white
-        UITabBar.appearance().isTranslucent = false
+        // UITabBar.appearance().isTranslucent = false
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 87/255, green: 154/255, blue: 243/255, alpha: 1.0)
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().isTranslucent = false
+        // UINavigationBar.appearance().isTranslucent = false
         
         /// Increase Launch Screen Time
         Thread.sleep(forTimeInterval: 1)
