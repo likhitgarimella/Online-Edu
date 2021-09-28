@@ -271,6 +271,7 @@
 				02097D1E26D003300085F7F1 /* Auth */,
 				0285A01926D8F2B7003E593D /* Topics */,
 				0285A00326D824BB003E593D /* Tab Bar */,
+				024C5B1D26FF62720044FCDC /* Home */,
 				0285A00E26D8267D003E593D /* Discover */,
 				024C5B0626FE04610044FCDC /* Profile */,
 				02108AAC26CEB7260046211D /* Info.plist */,
@@ -307,8 +308,6 @@
 		0285A00326D824BB003E593D /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
-				024C5B1D26FF62720044FCDC /* Home */,
-				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
 				0285A00826D8252B003E593D /* AddViewController.swift */,
 				0285A00A26D8254D003E593D /* InboxViewController.swift */,
 				0285A02426DA9DCB003E593D /* MessagesViewController.swift */,
@@ -319,6 +318,7 @@
 		0285A00E26D8267D003E593D /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
 				0290077526F33618003215D6 /* Live */,
 				0290077626F3361F003215D6 /* Authors */,
 				0290077726F33627003215D6 /* Courses */,
