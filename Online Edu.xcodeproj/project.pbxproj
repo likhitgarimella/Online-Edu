@@ -65,6 +65,7 @@
 		021FEC3E2703C5BC00377E3B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC382703C5BC00377E3B /* video3.mp4 */; };
 		021FEC412703D82E00377E3B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC402703D82E00377E3B /* Video.swift */; };
 		021FEC432703D8C400377E3B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC422703D8C400377E3B /* Player.swift */; };
+		021FEC452703E0C700377E3B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC442703E0C700377E3B /* Home.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -161,6 +162,7 @@
 		021FEC382703C5BC00377E3B /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		021FEC402703D82E00377E3B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		021FEC422703D8C400377E3B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		021FEC442703E0C700377E3B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 			children = (
 				024C5B1E26FF627E0044FCDC /* HomeScreenViewController.swift */,
 				021FEC312703BB0800377E3B /* HomeVideosView.swift */,
+				021FEC442703E0C700377E3B /* Home.swift */,
 				021FEC402703D82E00377E3B /* Video.swift */,
 				021FEC422703D8C400377E3B /* Player.swift */,
 				024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */,
@@ -611,6 +614,7 @@
 				0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */,
 				02097CD726CEC8B70085F7F1 /* HomeViewController.swift in Sources */,
 				021FEC2A2703027F00377E3B /* AuthorsPreviewCell.swift in Sources */,
+				021FEC452703E0C700377E3B /* Home.swift in Sources */,
 				024C5B0E26FE06200044FCDC /* ProfSegmFourViewController.swift in Sources */,
 				027B61BB2702BD24007832EB /* SegmFourCollectionViewCell.swift in Sources */,
 				021FEC2E270302A400377E3B /* TrendingPreviewCell.swift in Sources */,

@@ -32,7 +32,7 @@ struct Player: UIViewControllerRepresentable {
     
     var player: AVPlayer
     
-    func makeUIViewController(context: Context) -> some AVPlayerViewController {
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
         let view = AVPlayerViewController()
         view.player = player
         view.showsPlaybackControls = false
