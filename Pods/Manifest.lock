@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.4.3)
+  - Alamofire (5.4.4)
   - MBProgressHUD (1.2.0)
   - paper-onboarding (6.1.5)
   - SDWebImage (5.11.1):
@@ -26,7 +26,7 @@ SPEC REPOS:
     - Toast-Swift
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
