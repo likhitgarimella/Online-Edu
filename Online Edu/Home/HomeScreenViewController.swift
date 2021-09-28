@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import SwiftUI
 
+/*
 struct VideoModel {
     let caption: String
     let username: String
@@ -14,9 +16,24 @@ struct VideoModel {
     let videoFileName: String
     let videoFileFormat: String
 }
+*/
 
-class HomeScreenViewController: UIViewController, UITabBarControllerDelegate {
+class HomeScreenViewController: UIViewController {
     
+    @IBOutlet weak var theContainer: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let childView = UIHostingController(rootView: HomeVideosView())
+        addChild(childView)
+        theContainer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+        childView.view.frame = theContainer.bounds
+        theContainer.addSubview(childView.view)
+        
+    }
+    
+    /*
     private var collectionView: UICollectionView!
     
     private var data = [VideoModel]()
@@ -53,9 +70,11 @@ class HomeScreenViewController: UIViewController, UITabBarControllerDelegate {
             self.collectionView.setContentOffset(CGPoint.zero, animated: true)
         }
     }
+    */
     
 }
 
+/*
 extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, VideoCollectionViewCellDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,4 +105,5 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
         print("Share button tapped")
     }
     
-}   // #90
+}
+*/    // #110
