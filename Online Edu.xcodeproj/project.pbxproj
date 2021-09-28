@@ -55,6 +55,7 @@
 		021FEC2A2703027F00377E3B /* AuthorsPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC292703027F00377E3B /* AuthorsPreviewCell.swift */; };
 		021FEC2C2703029200377E3B /* CoursesPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC2B2703029200377E3B /* CoursesPreviewCell.swift */; };
 		021FEC2E270302A400377E3B /* TrendingPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC2D270302A400377E3B /* TrendingPreviewCell.swift */; };
+		021FEC30270304CA00377E3B /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC2F270304CA00377E3B /* CartViewController.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -141,6 +142,7 @@
 		021FEC292703027F00377E3B /* AuthorsPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsPreviewCell.swift; sourceTree = "<group>"; };
 		021FEC2B2703029200377E3B /* CoursesPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPreviewCell.swift; sourceTree = "<group>"; };
 		021FEC2D270302A400377E3B /* TrendingPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPreviewCell.swift; sourceTree = "<group>"; };
+		021FEC2F270304CA00377E3B /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				021FEC292703027F00377E3B /* AuthorsPreviewCell.swift */,
 				021FEC2B2703029200377E3B /* CoursesPreviewCell.swift */,
 				021FEC2D270302A400377E3B /* TrendingPreviewCell.swift */,
+				021FEC2F270304CA00377E3B /* CartViewController.swift */,
 				0290077526F33618003215D6 /* Live */,
 				0290077626F3361F003215D6 /* Authors */,
 				0290077726F33627003215D6 /* Courses */,
@@ -591,6 +594,7 @@
 				024C5B2826FF7B8B0044FCDC /* TabBarController.swift in Sources */,
 				0285A01D26D90180003E593D /* LiveCollectionViewCell.swift in Sources */,
 				0285A01F26D9018C003E593D /* CoursesCollectionViewCell.swift in Sources */,
+				021FEC30270304CA00377E3B /* CartViewController.swift in Sources */,
 				027B61B92702BD0F007832EB /* SegmThreeCollectionViewCell.swift in Sources */,
 				02AB86AC2702A24700A1F095 /* FavouritesViewController.swift in Sources */,
 				027B61B52702BCD8007832EB /* SegmOneCollectionViewCell.swift in Sources */,
