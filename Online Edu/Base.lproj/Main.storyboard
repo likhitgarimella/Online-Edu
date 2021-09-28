@@ -658,6 +658,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alex" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-mX-0dS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="DgY-uf-CtS"/>
+                                                                        <constraint firstAttribute="width" constant="116" id="Nck-aC-JdU"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -722,6 +726,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gao-S5-gaT">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="116" id="AZ2-HO-z0z"/>
+                                                                        <constraint firstAttribute="height" constant="128" id="F9d-D4-1gZ"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -786,6 +794,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kOg-f7-VFh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="116" id="12L-Xt-Nn5"/>
+                                                                        <constraint firstAttribute="height" constant="128" id="R8V-uE-y9c"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
@@ -850,6 +862,10 @@
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dlW-vb-LbZ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="128"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="128" id="9wp-Ip-ClG"/>
+                                                                        <constraint firstAttribute="width" constant="116" id="lyq-gK-bdz"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                             </subviews>
                                                             <constraints>
