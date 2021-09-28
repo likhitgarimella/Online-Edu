@@ -7,13 +7,25 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct Home: View {
     
     @State var top = 0
+    @State var data = [
+        Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType: "mp4")!)), replay: false),
+        Video(id: 1, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType: "mp4")!)), replay: false),
+        Video(id: 2, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video3", ofType: "mp4")!)), replay: false),
+        Video(id: 3, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video4", ofType: "mp4")!)), replay: false),
+        Video(id: 4, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType: "mp4")!)), replay: false),
+        Video(id: 5, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType: "mp4")!)), replay: false),
+    ]
     
     var body: some View {
         ZStack {
+            
+            
+            
             VStack {
                 /// top menu
                 HStack(spacing: 20) {
@@ -98,4 +110,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #102
+}   // #114
