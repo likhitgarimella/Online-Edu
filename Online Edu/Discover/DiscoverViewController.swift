@@ -10,6 +10,9 @@ import UIKit
 class DiscoverViewController: UIViewController {
     
     @IBOutlet var livePreviewCollectionView: UICollectionView!
+    @IBOutlet var authorsPreviewCollectionView: UICollectionView!
+    @IBOutlet var coursesPreviewCollectionView: UICollectionView!
+    @IBOutlet var trendingPreviewCollectionView: UICollectionView!
     
     /// images in coll view
     var items = [UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex"), UIImage(named: "alex")]
@@ -20,9 +23,18 @@ class DiscoverViewController: UIViewController {
         self.navigationItem.title = "Discover"
         
         livePreviewCollectionView.backgroundColor = UIColor.white
+        authorsPreviewCollectionView.backgroundColor = UIColor.white
+        coursesPreviewCollectionView.backgroundColor = UIColor.white
+        trendingPreviewCollectionView.backgroundColor = UIColor.white
         
         livePreviewCollectionView.dataSource = self
         livePreviewCollectionView.delegate = self
+        authorsPreviewCollectionView.dataSource = self
+        authorsPreviewCollectionView.delegate = self
+        coursesPreviewCollectionView.dataSource = self
+        coursesPreviewCollectionView.delegate = self
+        trendingPreviewCollectionView.dataSource = self
+        trendingPreviewCollectionView.delegate = self
         
     }
     
@@ -83,4 +95,4 @@ extension DiscoverViewController: UICollectionViewDelegate, UICollectionViewData
         
     }
     
-}   // #87
+}   // #99

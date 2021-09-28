@@ -9,6 +9,13 @@ import UIKit
 
 class CoursesPreviewCell: UICollectionViewCell {
     
+    @IBOutlet var photoImg: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        photoImg.layer.cornerRadius = 10
+        
+    }
     
-}   // #15
+}   // #22
