@@ -7,6 +7,7 @@ PODS:
   - SDWebImage/Core (5.11.1)
   - SwiftyJSON (5.0.1)
   - Toast-Swift (5.0.1)
+  - WMSegmentControl (2.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - SDWebImage
   - SwiftyJSON
   - Toast-Swift
+  - WMSegmentControl
 
 SPEC REPOS:
   trunk:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - SDWebImage
     - SwiftyJSON
     - Toast-Swift
+    - WMSegmentControl
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  WMSegmentControl: 4bb3a61e28cd0a0fcfcf932bec1f5795835b9f3f
 
-PODFILE CHECKSUM: a5676dcf72aca59ee74acd75b96e7613eb9bccbc
+PODFILE CHECKSUM: e5b39bcd9de1a779f6aed48fa317ef452b9d9405
 
 COCOAPODS: 1.10.1

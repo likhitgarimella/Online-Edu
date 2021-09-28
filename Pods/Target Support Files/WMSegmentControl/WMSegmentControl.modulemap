@@ -1,0 +1,6 @@
+framework module WMSegmentControl {
+  umbrella header "WMSegmentControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

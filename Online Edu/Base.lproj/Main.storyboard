@@ -2648,7 +2648,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="6I8-TI-P3l" customClass="ProfSegmTwoViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="amV-xU-ZlF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="0XG-ke-1Xu"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -2663,7 +2663,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Fk3-fM-ZIf" customClass="ProfSegmOneViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLn-hX-oF4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="438.66666666666669"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iyn-cR-sj6">
@@ -2684,7 +2684,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profSegStat1" translatesAutoresizingMaskIntoConstraints="NO" id="SRv-l8-usg">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SRv-l8-usg">
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="eU0-VU-oWS"/>
@@ -2809,25 +2809,25 @@
     </scenes>
     <designables>
         <designable name="7hK-Vm-VN8">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="GXQ-hE-iip">
-            <size key="intrinsicContentSize" width="42.666666666666664" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="20.666666666666668"/>
         </designable>
         <designable name="O5V-KN-Bkh">
-            <size key="intrinsicContentSize" width="132.33333333333334" height="19"/>
+            <size key="intrinsicContentSize" width="131.33333333333334" height="19"/>
         </designable>
         <designable name="QFY-Eh-jO6">
-            <size key="intrinsicContentSize" width="110.33333333333333" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="109.66666666666667" height="20.666666666666668"/>
         </designable>
         <designable name="Uyh-DW-dyq">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="dhK-Qm-2ts">
-            <size key="intrinsicContentSize" width="71" height="19"/>
+            <size key="intrinsicContentSize" width="70.666666666666671" height="19"/>
         </designable>
         <designable name="pzH-8I-2dp">
-            <size key="intrinsicContentSize" width="39.333333333333336" height="20.333333333333332"/>
+            <size key="intrinsicContentSize" width="39.666666666666664" height="20.666666666666668"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -2871,7 +2871,6 @@
         <image name="playView" width="11" height="12.333333015441895"/>
         <image name="profBg" width="361" height="241"/>
         <image name="profPic" width="141" height="141"/>
-        <image name="profSegStat1" width="110" height="141"/>
         <image name="profTab1" width="10" height="13"/>
         <image name="profTab2" width="13.333333015441895" height="15"/>
         <image name="profTab3" width="16.666666030883789" height="14.666666984558105"/>
