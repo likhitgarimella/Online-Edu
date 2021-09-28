@@ -12,7 +12,7 @@ class ProfSegmTwoViewController: UIViewController {
     @IBOutlet var profSegmCollectionView: UICollectionView!
     
     /// images in coll view
-    var items = [UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4"), UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4"), UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4"), UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4")]
+    var items = [UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4"), UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4"), UIImage(named: "profSegTwo1"), UIImage(named: "profSegTwo2"), UIImage(named: "profSegTwo3"), UIImage(named: "profSegTwo4")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
