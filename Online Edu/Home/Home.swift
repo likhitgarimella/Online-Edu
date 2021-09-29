@@ -19,6 +19,8 @@ struct Home: View {
         Video(id: 3, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video4", ofType: "mp4")!)), replay: false),
         Video(id: 4, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType: "mp4")!)), replay: false),
         Video(id: 5, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType: "mp4")!)), replay: false),
+        Video(id: 6, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video7", ofType: "mp4")!)), replay: false),
+        Video(id: 7, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video8", ofType: "mp4")!)), replay: false),
     ]
     
     var body: some View {
@@ -110,4 +112,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #114
+}   // #116

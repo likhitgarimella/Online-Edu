@@ -20,10 +20,28 @@ struct PlayerView: View {
                     Player(player: data[index].player)
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                         .offset(y: -5)
+                    
+                    if self.data[index].replay {
+                        Button {
+                            self.data[index].replay = false
+                            self.data[index].player.seek(to: .zero)
+                            self.data[index].player.play()
+                        } label: {
+                            Image(systemName: "goforward")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .foregroundColor(.white)
+                        }
+                    }
                 }
-                .onAppear {
-                    self.data[index].player.play()
-                }
+            }
+        }
+        .onAppear {
+            self.data[0].player.play()
+            self.data[0].player.actionAtItemEnd = .none
+            
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.data[0].player.currentItem, queue: .main) { _ in
+                self.data[0].replay = true
             }
         }
     }
@@ -47,4 +65,4 @@ struct Player: UIViewControllerRepresentable {
         
     }
     
-}   // #51
+}   // #69
