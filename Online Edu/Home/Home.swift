@@ -24,7 +24,7 @@ struct Home: View {
     var body: some View {
         ZStack {
             
-            
+            PlayerScrollView(data: $data)
             
             VStack {
                 /// top menu

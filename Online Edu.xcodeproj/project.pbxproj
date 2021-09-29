@@ -66,6 +66,7 @@
 		021FEC412703D82E00377E3B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC402703D82E00377E3B /* Video.swift */; };
 		021FEC432703D8C400377E3B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC422703D8C400377E3B /* Player.swift */; };
 		021FEC452703E0C700377E3B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC442703E0C700377E3B /* Home.swift */; };
+		021FEC472703E46600377E3B /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC462703E46600377E3B /* PlayerScrollView.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -163,6 +164,7 @@
 		021FEC402703D82E00377E3B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		021FEC422703D8C400377E3B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		021FEC442703E0C700377E3B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		021FEC462703E46600377E3B /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 				021FEC442703E0C700377E3B /* Home.swift */,
 				021FEC402703D82E00377E3B /* Video.swift */,
 				021FEC422703D8C400377E3B /* Player.swift */,
+				021FEC462703E46600377E3B /* PlayerScrollView.swift */,
 				024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */,
 			);
 			path = Home;
@@ -656,6 +659,7 @@
 				021FEC262702F65D00377E3B /* FindFriendsViewController.swift in Sources */,
 				02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */,
 				0285A01426D826CC003E593D /* TrendingViewController.swift in Sources */,
+				021FEC472703E46600377E3B /* PlayerScrollView.swift in Sources */,
 				0285A01026D8269B003E593D /* LiveViewController.swift in Sources */,
 				02108AA126CEB7250046211D /* SceneDelegate.swift in Sources */,
 				021FEC432703D8C400377E3B /* Player.swift in Sources */,
