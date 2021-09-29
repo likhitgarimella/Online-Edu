@@ -67,6 +67,7 @@
 		021FEC612703FFD500377E3B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC5B2703FFD400377E3B /* video3.mp4 */; };
 		021FEC622703FFD500377E3B /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC5C2703FFD500377E3B /* video4.mp4 */; };
 		021FEC632703FFD500377E3B /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC5D2703FFD500377E3B /* video1.mp4 */; };
+		021FEC652704011700377E3B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC642704011700377E3B /* SearchResultsViewController.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -165,6 +166,7 @@
 		021FEC5B2703FFD400377E3B /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		021FEC5C2703FFD500377E3B /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
 		021FEC5D2703FFD500377E3B /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		021FEC642704011700377E3B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				0285A00626D8250F003E593D /* DiscoverViewController.swift */,
+				021FEC642704011700377E3B /* SearchResultsViewController.swift */,
 				021FEC272702FAEF00377E3B /* LivePreviewCell.swift */,
 				021FEC292703027F00377E3B /* AuthorsPreviewCell.swift */,
 				021FEC2B2703029200377E3B /* CoursesPreviewCell.swift */,
@@ -618,6 +621,7 @@
 				02097CD726CEC8B70085F7F1 /* HomeViewController.swift in Sources */,
 				021FEC2A2703027F00377E3B /* AuthorsPreviewCell.swift in Sources */,
 				021FEC452703E0C700377E3B /* Home.swift in Sources */,
+				021FEC652704011700377E3B /* SearchResultsViewController.swift in Sources */,
 				024C5B0E26FE06200044FCDC /* ProfSegmFourViewController.swift in Sources */,
 				027B61BB2702BD24007832EB /* SegmFourCollectionViewCell.swift in Sources */,
 				021FEC2E270302A400377E3B /* TrendingPreviewCell.swift in Sources */,

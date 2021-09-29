@@ -55,7 +55,7 @@ struct Home: View {
                     VStack(spacing: 30) {
                         
                         Button(action: {
-                            
+                            print("Profile tapped")
                         }, label: {
                             Image(systemName: "person.crop.circle")
                                 .renderingMode(.original)
@@ -65,7 +65,7 @@ struct Home: View {
                                 .foregroundColor(.white)
                         })
                         Button(action: {
-                            
+                            print("Like tapped")
                         }, label: {
                             VStack {
                                 Image(systemName: "suit.heart.fill")
@@ -76,7 +76,7 @@ struct Home: View {
                             }
                         })
                         Button(action: {
-                            
+                            print("Comment tapped")
                         }, label: {
                             VStack {
                                 Image(systemName: "message.fill")
@@ -87,7 +87,7 @@ struct Home: View {
                             }
                         })
                         Button(action: {
-                            
+                            print("Share tapped")
                         }, label: {
                             VStack {
                                 Image(systemName: "arrowshape.turn.up.right.fill")
