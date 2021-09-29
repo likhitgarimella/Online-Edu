@@ -54,10 +54,23 @@ struct PlayerScrollView: UIViewRepresentable {
         }
         
         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            let index = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
-            print(index)
+            
+            let currentIndex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
+            var index = 0
+            
+            if currentIndex != index {
+                
+                index = currentIndex
+                for i in 0..<view.data.count {
+                    view.data[i].player.seek(to: .zero)
+                    view.data[i].player.play()
+                }
+                view.data[index].player.play()
+                
+            }
+            
         }
         
     }
     
-}   // #64
+}   // #77
