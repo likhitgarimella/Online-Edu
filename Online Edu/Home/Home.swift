@@ -9,6 +9,20 @@ import Foundation
 import SwiftUI
 import AVKit
 
+@available(iOS 15.0, *)
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+    var body: some View {
+        Button("Press to dismiss") {
+            dismiss()
+        }
+        .font(.title)
+        .padding()
+        .background(Color.black)
+        .foregroundColor(Color.white)
+    }
+}
+
 struct Home: View {
     
     @State var top = 0
@@ -20,7 +34,9 @@ struct Home: View {
         Video(id: 4, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType: "mp4")!)), replay: false),
         Video(id: 5, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType: "mp4")!)), replay: false),
     ]
+    
     @State private var isPressed = false
+    @State private var showingSheet = false
     
     var body: some View {
         ZStack {
@@ -79,6 +95,7 @@ struct Home: View {
                         })
                         Button(action: {
                             print("Comment tapped")
+                            showingSheet.toggle()
                         }, label: {
                             VStack {
                                 Image(systemName: "message.fill")
@@ -88,6 +105,13 @@ struct Home: View {
                                     .foregroundColor(.white)
                             }
                         })
+                        .sheet(isPresented: $showingSheet) {
+                            if #available(iOS 15.0, *) {
+                                SheetView()
+                            } else {
+                                // Fallback on earlier versions
+                            }
+                        }
                         Button(action: {
                             print("Share tapped")
                         }, label: {
@@ -112,4 +136,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #116
+}   // #140
