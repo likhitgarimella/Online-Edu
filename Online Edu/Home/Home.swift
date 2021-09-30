@@ -20,6 +20,7 @@ struct Home: View {
         Video(id: 4, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType: "mp4")!)), replay: false),
         Video(id: 5, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType: "mp4")!)), replay: false),
     ]
+    @State private var isPressed = false
     
     var body: some View {
         ZStack {
@@ -66,12 +67,13 @@ struct Home: View {
                         })
                         Button(action: {
                             print("Like tapped")
+                            self.isPressed.toggle()
                         }, label: {
                             VStack {
                                 Image(systemName: "suit.heart.fill")
                                     .font(.title)
-                                    .foregroundColor(.white)
-                                Text("100K")
+                                    .foregroundColor(!isPressed ? .white : .red)
+                                Text(!isPressed ? "345" : "346")
                                     .foregroundColor(.white)
                             }
                         })
@@ -110,4 +112,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #114
+}   // #116
