@@ -68,6 +68,9 @@
 		021FEC622703FFD500377E3B /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC5C2703FFD500377E3B /* video4.mp4 */; };
 		021FEC632703FFD500377E3B /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 021FEC5D2703FFD500377E3B /* video1.mp4 */; };
 		021FEC652704011700377E3B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC642704011700377E3B /* SearchResultsViewController.swift */; };
+		021FEC672706703D00377E3B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC662706703D00377E3B /* CommentsViewController.swift */; };
+		021FEC69270670A400377E3B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC68270670A400377E3B /* CommentsView.swift */; };
+		021FEC6B270670EE00377E3B /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC6A270670EE00377E3B /* Comments.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -167,6 +170,9 @@
 		021FEC5C2703FFD500377E3B /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
 		021FEC5D2703FFD500377E3B /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
 		021FEC642704011700377E3B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		021FEC662706703D00377E3B /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		021FEC68270670A400377E3B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		021FEC6A270670EE00377E3B /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -367,6 +373,9 @@
 				021FEC422703D8C400377E3B /* Player.swift */,
 				021FEC462703E46600377E3B /* PlayerScrollView.swift */,
 				024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */,
+				021FEC662706703D00377E3B /* CommentsViewController.swift */,
+				021FEC68270670A400377E3B /* CommentsView.swift */,
+				021FEC6A270670EE00377E3B /* Comments.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -620,6 +629,7 @@
 				0285A02526DA9DCB003E593D /* MessagesViewController.swift in Sources */,
 				02097CD726CEC8B70085F7F1 /* HomeViewController.swift in Sources */,
 				021FEC2A2703027F00377E3B /* AuthorsPreviewCell.swift in Sources */,
+				021FEC69270670A400377E3B /* CommentsView.swift in Sources */,
 				021FEC452703E0C700377E3B /* Home.swift in Sources */,
 				021FEC652704011700377E3B /* SearchResultsViewController.swift in Sources */,
 				024C5B0E26FE06200044FCDC /* ProfSegmFourViewController.swift in Sources */,
@@ -627,11 +637,13 @@
 				021FEC2E270302A400377E3B /* TrendingPreviewCell.swift in Sources */,
 				024C5B1026FE06510044FCDC /* SettingsPrivacyViewController.swift in Sources */,
 				027B61B72702BCF7007832EB /* SegmTwoCollectionViewCell.swift in Sources */,
+				021FEC672706703D00377E3B /* CommentsViewController.swift in Sources */,
 				0285A00B26D8254D003E593D /* InboxViewController.swift in Sources */,
 				0290077D26F35666003215D6 /* AddCourseViewController.swift in Sources */,
 				024C5B2126FF62870044FCDC /* VideoCollectionViewCell.swift in Sources */,
 				02097D1A26CF8FC60085F7F1 /* Extensions.swift in Sources */,
 				0285A00926D8252B003E593D /* AddViewController.swift in Sources */,
+				021FEC6B270670EE00377E3B /* Comments.swift in Sources */,
 				024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */,
 				0285A00D26D8256C003E593D /* ProfileViewController.swift in Sources */,
 				0285A00226D82499003E593D /* InterestsViewController.swift in Sources */,

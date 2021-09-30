@@ -9,20 +9,6 @@ import Foundation
 import SwiftUI
 import AVKit
 
-@available(iOS 15.0, *)
-struct SheetView: View {
-    @Environment(\.dismiss) var dismiss
-    var body: some View {
-        Button("Press to dismiss") {
-            dismiss()
-        }
-        .font(.title)
-        .padding()
-        .background(Color.black)
-        .foregroundColor(Color.white)
-    }
-}
-
 struct Home: View {
     
     @State var top = 0
@@ -107,7 +93,7 @@ struct Home: View {
                         })
                         .sheet(isPresented: $showingSheet) {
                             if #available(iOS 15.0, *) {
-                                SheetView()
+                                Comments()
                             } else {
                                 // Fallback on earlier versions
                             }
@@ -136,4 +122,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #140
+}   // #126

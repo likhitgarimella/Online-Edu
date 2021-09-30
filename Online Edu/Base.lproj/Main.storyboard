@@ -1075,6 +1075,36 @@
             </objects>
             <point key="canvasLocation" x="5077" y="-405"/>
         </scene>
+        <!--Comments View Controller-->
+        <scene sceneID="Sbk-2V-QjC">
+            <objects>
+                <viewController id="Kfe-a6-E96" customClass="CommentsViewController" customModule="Online_Edu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TUK-uj-Oyp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Hr-VR-0fY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u9w-OY-IhP"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="u9w-OY-IhP" firstAttribute="bottom" secondItem="2Hr-VR-0fY" secondAttribute="bottom" id="CbA-aU-mwI"/>
+                            <constraint firstItem="u9w-OY-IhP" firstAttribute="trailing" secondItem="2Hr-VR-0fY" secondAttribute="trailing" id="Ghb-1U-iVR"/>
+                            <constraint firstItem="2Hr-VR-0fY" firstAttribute="top" secondItem="u9w-OY-IhP" secondAttribute="top" id="dGx-Nc-Gto"/>
+                            <constraint firstItem="2Hr-VR-0fY" firstAttribute="leading" secondItem="u9w-OY-IhP" secondAttribute="leading" id="qWJ-D5-1f4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theContainer" destination="2Hr-VR-0fY" id="kiD-c9-5ey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJe-Ky-vcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4103" y="-2010"/>
+        </scene>
         <!--Cart Details-->
         <scene sceneID="MUn-ow-o63">
             <objects>
@@ -4051,6 +4081,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
