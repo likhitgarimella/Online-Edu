@@ -16,6 +16,7 @@ class SearchResultsViewController: UIViewController {
     // Outlets
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var searchBtn: UIButton!
+    @IBOutlet var resultsLabel: UILabel!
     
     var reachability: Reachability?
     
@@ -84,19 +85,23 @@ class SearchResultsViewController: UIViewController {
                             print("Data")
                             print(data)
                             
-                            let category = data["Author"] as! NSArray
-                            print("Category")
-                            print(category)
+                            self.resultsLabel.text = "\(data)"
                             
-                            let userId = category[0]
-                            print("User Id")
-                            print(userId)
+                            let categoryOne = data["Author"] as! NSArray
+                            print("Category")
+                            print(categoryOne)
+                            
+                            // self.resultsLabel.text = "\(category)"
+                            
+                            // let userId = category[0]
+                            // print("User Id")
+                            // print(userId)
                             
                             print("7777--------------------------------7777")
                             
-                            UserDefaults.standard.setValue(userId, forKey: "UserId")
+                            // UserDefaults.standard.setValue(userId, forKey: "UserId")
                             
-                            print("8888--------------------------------8888")
+                            // print("8888--------------------------------8888")
                             
                         } else {
                             let alertController = UIAlertController(title: "Oops-1", message: "\(message)", preferredStyle: .alert)
@@ -139,4 +144,4 @@ class SearchResultsViewController: UIViewController {
         searchApiCalling()
     }
     
-}   // #143
+}   // #148
