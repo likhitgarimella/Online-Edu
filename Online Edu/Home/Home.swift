@@ -92,11 +92,7 @@ struct Home: View {
                             }
                         })
                         .sheet(isPresented: $showingSheet) {
-                            if #available(iOS 15.0, *) {
-                                Comments()
-                            } else {
-                                // Fallback on earlier versions
-                            }
+                            Comments()
                         }
                         Button(action: {
                             print("Share tapped")
@@ -122,4 +118,4 @@ struct Home: View {
         .edgesIgnoringSafeArea(.all)
     }
     
-}   // #126
+}   // #122

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+/*
 struct CommentsView: View {
     
     var body: some View {
@@ -22,5 +23,6 @@ struct CommentsView_Previews: PreviewProvider {
     static var previews: some View {
         CommentsView()
     }
-    
-}   // #27
+
+}*/
+    // #29

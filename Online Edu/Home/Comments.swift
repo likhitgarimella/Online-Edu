@@ -9,6 +9,23 @@ import Foundation
 import SwiftUI
 import AVKit
 
+struct Comments: UIViewControllerRepresentable {
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<Comments>) -> CommentsViewController {
+        // let vc = CommentsViewController()
+        // return vc
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "CommentsVC")
+        return vc as! CommentsViewController
+    }
+    
+    func updateUIViewController(_ uiViewController: CommentsViewController, context: UIViewControllerRepresentableContext<Comments>) {
+        
+    }
+    
+}
+
+/*
 struct Comments: View {
     @Environment(\.presentationMode) var presentationMode
     var body: some View {
@@ -20,4 +37,5 @@ struct Comments: View {
         .background(Color.black)
         .foregroundColor(Color.white)
     }
-}   // #24
+}*/
+    // #42

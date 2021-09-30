@@ -7,21 +7,20 @@
 
 import Foundation
 import UIKit
-import SwiftUI
 
 class CommentsViewController: UIViewController {
     
-    @IBOutlet weak var theContainer: UIView!
+    // @IBOutlet weak var theContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         let childView = UIHostingController(rootView: CommentsView())
         addChild(childView)
         theContainer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
         childView.view.frame = theContainer.bounds
         theContainer.addSubview(childView.view)
-        
+        */
     }
     
-}   // #28
+}   // #27
