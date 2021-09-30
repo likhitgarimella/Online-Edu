@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftUI
 import AVKit
 
@@ -15,4 +16,4 @@ struct Video: Identifiable {
     var player: AVPlayer
     var replay: Bool
     
-}   // #19
+}   // #20

@@ -5,6 +5,8 @@
 //  Created by Likhit Garimella on 29/08/21.
 //
 
+// MARK: - This file no longer in use.
+
 /*
 import UIKit
 import AVFoundation
@@ -198,4 +200,4 @@ class VideoCollectionViewCell: UICollectionViewCell {
     }
     
 }
-*/    // #202
+*/    // #204

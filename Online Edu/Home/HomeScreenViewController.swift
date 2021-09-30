@@ -5,6 +5,7 @@
 //  Created by Likhit Garimella on 27/08/21.
 //
 
+import Foundation
 import UIKit
 import SwiftUI
 
@@ -106,4 +107,4 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
 }
-*/    // #110
+*/    // #111

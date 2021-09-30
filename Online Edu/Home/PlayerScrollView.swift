@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftUI
 
 struct PlayerScrollView: UIViewRepresentable {
@@ -78,4 +79,4 @@ struct PlayerScrollView: UIViewRepresentable {
         
     }
     
-}   // #82
+}   // #83
