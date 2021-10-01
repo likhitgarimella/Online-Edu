@@ -71,6 +71,7 @@
 		021FEC672706703D00377E3B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC662706703D00377E3B /* CommentsViewController.swift */; };
 		021FEC69270670A400377E3B /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC68270670A400377E3B /* CommentsView.swift */; };
 		021FEC6B270670EE00377E3B /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC6A270670EE00377E3B /* Comments.swift */; };
+		021FEC6D2706BF0200377E3B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021FEC6C2706BF0200377E3B /* CommentTableViewCell.swift */; };
 		024C5B0826FE05BF0044FCDC /* ProfSegmOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */; };
 		024C5B0A26FE05E90044FCDC /* ProfSegmTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */; };
 		024C5B0C26FE06060044FCDC /* ProfSegmThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */; };
@@ -173,6 +174,7 @@
 		021FEC662706703D00377E3B /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		021FEC68270670A400377E3B /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		021FEC6A270670EE00377E3B /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		021FEC6C2706BF0200377E3B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		024C5B0726FE05BF0044FCDC /* ProfSegmOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmOneViewController.swift; sourceTree = "<group>"; };
 		024C5B0926FE05E90044FCDC /* ProfSegmTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmTwoViewController.swift; sourceTree = "<group>"; };
 		024C5B0B26FE06060044FCDC /* ProfSegmThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfSegmThreeViewController.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				021FEC462703E46600377E3B /* PlayerScrollView.swift */,
 				024C5B2026FF62870044FCDC /* VideoCollectionViewCell.swift */,
 				021FEC662706703D00377E3B /* CommentsViewController.swift */,
+				021FEC6C2706BF0200377E3B /* CommentTableViewCell.swift */,
 				021FEC68270670A400377E3B /* CommentsView.swift */,
 				021FEC6A270670EE00377E3B /* Comments.swift */,
 			);
@@ -672,6 +675,7 @@
 				021FEC322703BB0800377E3B /* HomeVideosView.swift in Sources */,
 				02108A9F26CEB7250046211D /* AppDelegate.swift in Sources */,
 				021FEC282702FAEF00377E3B /* LivePreviewCell.swift in Sources */,
+				021FEC6D2706BF0200377E3B /* CommentTableViewCell.swift in Sources */,
 				021FEC262702F65D00377E3B /* FindFriendsViewController.swift in Sources */,
 				02859FFE26D6C1C5003E593D /* Reachability.swift in Sources */,
 				0285A01426D826CC003E593D /* TrendingViewController.swift in Sources */,
