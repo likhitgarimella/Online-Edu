@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 import SwiftUI
 
+// MARK: - This file no longer in use.
+
 /*
 struct CommentsView: View {
     
@@ -25,4 +27,4 @@ struct CommentsView_Previews: PreviewProvider {
     }
 
 }*/
-    // #29
+    // #31
