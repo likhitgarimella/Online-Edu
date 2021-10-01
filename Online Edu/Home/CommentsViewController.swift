@@ -10,7 +10,19 @@ import UIKit
 
 class CommentsViewController: UIViewController {
     
-    // @IBOutlet weak var theContainer: UIView!
+    @IBOutlet weak var commentsView: UIView!
+    
+    func Properties() {
+        
+        commentsView.layer.cornerRadius = 36
+        
+        commentsView.layer.masksToBounds = false
+        commentsView.layer.shadowRadius = 20
+        commentsView.layer.shadowOpacity = 1
+        commentsView.layer.shadowColor = UIColor.gray.cgColor
+        commentsView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +33,9 @@ class CommentsViewController: UIViewController {
         childView.view.frame = theContainer.bounds
         theContainer.addSubview(childView.view)
         */
+        
+        Properties()
+        
     }
     
-}   // #27
+}   // #42
