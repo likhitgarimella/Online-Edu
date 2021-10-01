@@ -44,6 +44,16 @@ extension UITextField {
         self.layer.masksToBounds = true
     }
     
+    func setCommentsTextFieldUnderLine() {
+        let border = CALayer()
+        let width = CGFloat(0.5)
+        border.borderColor = UIColor.white.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+    
 }
 
 // Button hover
@@ -60,4 +70,4 @@ extension UIButton {
         layer.add(flash, forKey: nil)
     }
     
-}   // #64
+}   // #74
